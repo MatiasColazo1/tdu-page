@@ -131,6 +131,15 @@ ul {
   justify-content: space-between; /* Separa el texto y los íconos */
 }
 
+.header-content.logonav{
+  display: block;
+  position: absolute;
+  height: 50px;
+  width: auto; /* Para mantener la proporción de la imagen */
+  top: 50%; /* Centra la imagen verticalmente en relación con el contenedor */
+  transform: translateY(-50%); /* Ajusta la posición vertical */
+  left: 0; /* Alinea la imagen a la izquierda */
+}
 
 
 
