@@ -1,0 +1,50 @@
+.banner {
+  position: relative;
+  width: 100%; /* Asegura que el banner ocupe todo el ancho */
+  height: 100vh; /* Hace que el banner cubra 100% de la altura de la ventana */
+  background-image: url('../../../assets/tdu-fondo.jpg');
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio */
+  background-position: center; /* Centra la imagen de fondo */
+  animation: zoomBackground 10s infinite alternate,
+  colorShift 20s infinite alternate;
+  display: flex;
+  justify-content: center; /* Centra el contenido (logo) horizontalmente */
+  align-items: center; /* Centra el contenido (logo) verticalmente */
+}
+
+@keyframes zoomBackground {
+  0% {
+      background-size: 100%;
+  }
+  100% {
+      background-size: 120%;
+  }
+}
+
+@keyframes colorShift {
+  0%, 100% {
+      filter: none;
+  }
+  50% {
+      filter: grayscale(100%);
+  }
+}
+
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(115, 2, 6, 0.733); /* Capa oscura con opacidad */
+  z-index: 1;
+}
+
+
+.logo {
+  max-width: 300px; /* Ajusta el tamaño del logo según tus necesidades */
+  height: auto; /* Mantiene la proporción del logo */
+  z-index: 10; /* Asegura que el logo esté por encima del fondo */
+}

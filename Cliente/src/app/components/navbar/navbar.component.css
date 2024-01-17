@@ -9,6 +9,7 @@ ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 70px;
   }
   .example-1 .icon-content {
     margin: 0 16px;
@@ -118,6 +119,7 @@ ul {
     width: 100%;
     margin-top: 24px;
     position: fixed;
+    z-index: 101;
 }
 
 .bx {
@@ -147,9 +149,9 @@ ul {
 
 
 .logonav {
-  height: auto; /* Mantiene la proporción de la imagen */
-  width: auto; /* Ajusta el ancho según necesites */
-  /* No necesitas position:absolute aquí */
+  height: auto;
+  width: auto; 
+  margin-left: 70px;
 }
 
 
