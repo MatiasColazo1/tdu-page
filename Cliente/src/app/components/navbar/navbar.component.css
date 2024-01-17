@@ -113,7 +113,7 @@ ul {
 
 .container{
     margin-top: 24px;
-    position: relative; /* O 'fixed' si el navbar debe permanecer en la parte superior de la pantalla */
+    position: fixed; /* O 'fixed' si el navbar debe permanecer en la parte superior de la pantalla */
     z-index: 101; 
 }
 
