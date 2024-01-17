@@ -1,39 +1,39 @@
 <div class="container">
     <main>
-    <div class="header-content">
-        <img class="logonav" src="../../../assets/logonombre.png" alt="logobn">
-        <ul class="example-1">
-            <li class="icon-content">
-                <a class="link" data-social="instagram" aria-label="instagram" href="https://www.spotify.com/">
-                <i class='bx bxl-instagram'></i>
-            </a>
-        </li>
-        <li class="icon-content">
-            <a class="link" data-social="facebook" aria-label="facebook" href="https://www.pinterest.com/">
-                <i class='bx bxl-facebook' ></i>
-            </a>
-        </li>
-        <li class="icon-content">
-            <a class="link" data-social="whatsapp" aria-label="whatsapp" href="https://dribbble.com/">
-                <i class='bx bxl-whatsapp'></i>
-            </a>
-        </li>
-        <label class="burger" (click)="toggleMenu()" [ngClass]="{'menu-open': isMenuOpen}">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        
-        </ul>
-    </div>
-</main>
+        <div class="header-content">
+            <img class="logonav" src="../../../assets/logonombre.png" alt="logobn">
+            <ul class="example-1">
+                <li class="icon-content">
+                    <a class="link" data-social="instagram" aria-label="instagram" href="https://www.spotify.com/">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </li>
+                <li class="icon-content">
+                    <a class="link" data-social="facebook" aria-label="facebook" href="https://www.pinterest.com/">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                </li>
+                <li class="icon-content">
+                    <a class="link" data-social="whatsapp" aria-label="whatsapp" href="https://dribbble.com/">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                </li>
+                <label class="burger" (click)="toggleMenu()" [ngClass]="{'menu-open': isMenuOpen}">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+            </ul>
+        </div>
+    </main>
 </div>
 <div class="menu-overlay" *ngIf="isMenuOpen">
-        <!-- Contenido del menú -->
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-            <!-- Otros elementos del menú -->
-        </ul>
-    </div>
+    <!-- Contenido del menú -->
+    <ul>
+        <li><a routerLink="/">Inicio</a></li>
+        <li><a routerLink="/cursos">Cursos</a></li>
+        <li><a routerLink="#">Contacto</a></li>
+        <!-- Otros elementos del menú -->
+    </ul>
+</div>
