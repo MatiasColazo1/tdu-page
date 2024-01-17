@@ -18,13 +18,22 @@
                 <i class='bx bxl-whatsapp'></i>
             </a>
         </li>
-        <label class="burger" for="burger">
-            <input type="checkbox" id="burger">
+        <label class="burger" (click)="toggleMenu()" [ngClass]="{'menu-open': isMenuOpen}">
             <span></span>
             <span></span>
             <span></span>
         </label>
+        
         </ul>
     </div>
 </main>
 </div>
+<div class="menu-overlay" *ngIf="isMenuOpen">
+        <!-- Contenido del menú -->
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+            <!-- Otros elementos del menú -->
+        </ul>
+    </div>

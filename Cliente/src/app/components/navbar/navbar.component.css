@@ -90,22 +90,22 @@ ul {
     transform: translateY(-100%);
   }
   
-  .burger input:checked ~ span:nth-of-type(1) {
+  .burger.menu-open span:nth-of-type(1) {
     transform: rotate(45deg);
     top: 0px;
     left: 5px;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(2) {
+}
+
+.burger.menu-open span:nth-of-type(2) {
     width: 0%;
     opacity: 0;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(3) {
+}
+
+.burger.menu-open span:nth-of-type(3) {
     transform: rotate(-45deg);
     top: 28px;
     left: 5px;
-  }
+}
 
 
 
@@ -113,6 +113,8 @@ ul {
 
 .container{
     margin-top: 24px;
+    position: relative; /* O 'fixed' si el navbar debe permanecer en la parte superior de la pantalla */
+    z-index: 101; 
 }
 
 .bx {
@@ -133,3 +135,35 @@ ul {
 
 
 
+
+
+
+
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo semitransparente */
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-overlay ul {
+    list-style: none;
+    text-align: center;
+}
+
+.menu-overlay ul li {
+    margin: 10px 0;
+}
+
+.menu-overlay ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
