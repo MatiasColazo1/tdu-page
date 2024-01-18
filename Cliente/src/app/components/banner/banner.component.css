@@ -38,7 +38,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(115, 2, 6, 0.733); /* Capa oscura con opacidad */
+  background: #8f04099d; /* Capa oscura con opacidad */
   z-index: 1;
 }
 
