@@ -195,8 +195,6 @@ ul {
     text-transform: uppercase;
 }
 
-
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -226,9 +224,6 @@ ul {
 .menu-overlay ul li:nth-child(3) {
   animation-delay: 0.9s;
 }
-
-
-
 
 .content.scrolled {
   background-color: #0e0a0ada;

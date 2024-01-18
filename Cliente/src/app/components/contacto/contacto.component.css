@@ -1,0 +1,57 @@
+.content {
+ 
+    min-height: 100vh;
+   
+    margin: 0;
+  }
+  
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 48vh;
+    background-image: url('../../../assets/tdu-banner2.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: zoomBackground 10s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    color: #fff;
+    font-family: 'Rye', serif;
+    text-transform: uppercase;
+    
+  }
+  
+  h2 {
+   color: #8F0408;
+   font-family: Roboto Slab;
+  }
+  
+  .banner h1 {
+    margin: 0;
+    font-size: 50px;
+  }
+  
+  @keyframes zoomBackground {
+    0% {
+      background-size: 100%;
+    }
+  
+    100% {
+      background-size: 120%;
+    }
+  }
+  
+  .banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  
