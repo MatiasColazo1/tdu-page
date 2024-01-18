@@ -22,14 +22,57 @@
     color: #fff;
     font-family: 'Rye', serif;
     text-transform: uppercase;
-    
   }
   
   h2 {
    color: #8F0408;
-   font-family: Roboto Slab;
+   font-family: serif, Roboto Slab;
+  }
+
+  h3{
+    color: #ffefef;
+    font-family: Roboto Slab;
   }
   
+
+  li{
+    text-decoration: none;
+    font-size: 17px;
+    font-family:serif;
+    color: #bdbdbd;
+  }
+
+  p{
+    font-family:Roboto Slab;
+  }
+
+  button {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  button::before {
+    margin-left: auto;
+  }
+  
+  button::after, button::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  button:hover::after, button:hover::before {
+    width: 100%;
+  }
+
   .banner h1 {
     margin: 0;
     font-size: 50px;
