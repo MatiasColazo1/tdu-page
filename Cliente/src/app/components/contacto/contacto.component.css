@@ -22,16 +22,17 @@
     color: #fff;
     font-family: 'Rye', serif;
     text-transform: uppercase;
+    
   }
   
   h2 {
    color: #8F0408;
-   font-family: serif, Roboto Slab;
+   font-family: serif;
   }
 
   h3{
     color: #ffefef;
-    font-family: Roboto Slab;
+    
   }
   
 
@@ -43,10 +44,10 @@
   }
 
   p{
-    font-family:Roboto Slab;
+    font-family:serif;
   }
 
-  button {
+  h3 {
     color: white;
     text-decoration: none;
     font-size: 25px;
@@ -56,11 +57,11 @@
     font-family: 'Poppins', sans-serif;
   }
   
-  button::before {
+  h3::before {
     margin-left: auto;
   }
   
-  button::after, button::before {
+  h3::after, button::before {
     content: '';
     width: 0%;
     height: 2px;
@@ -69,7 +70,7 @@
     transition: 0.5s;
   }
   
-  button:hover::after, button:hover::before {
+  h3:hover::after, h3:hover::before {
     width: 100%;
   }
 
