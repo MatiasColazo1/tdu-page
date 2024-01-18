@@ -70,21 +70,31 @@ body {
 .banner {
   position: relative;
   width: 100%;
-  /* Asegura que el banner ocupe todo el ancho */
-  height: 30vh;
-  /* Hace que el banner cubra 100% de la altura de la ventana */
+  height: 48vh;
   background-image: url('../../../assets/tdu-banner2.jpg');
   background-size: cover;
-  /* Asegura que la imagen de fondo cubra todo el espacio */
   background-position: center;
-  /* Centra la imagen de fondo */
-  animation: zoomBackground 10s infinite alternate,
-    colorShift 20s infinite alternate;
+  animation: zoomBackground 10s infinite alternate;
   display: flex;
   justify-content: center;
-  /* Centra el contenido (logo) horizontalmente */
   align-items: center;
-  /* Centra el contenido (logo) verticalmente */
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Rye', serif;
+  text-transform: uppercase;
+  font-size: 70px;
+}
+
+h2 {
+ color: #8F0408;
+ font-family: Roboto Slab;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 2em;
 }
 
 @keyframes zoomBackground {
@@ -97,17 +107,7 @@ body {
   }
 }
 
-@keyframes colorShift {
 
-  0%,
-  100% {
-    filter: none;
-  }
-
-  50% {
-    filter: grayscale(100%);
-  }
-}
 
 .banner::before {
   content: '';
@@ -116,8 +116,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #8f04099d;
-  /* Capa oscura con opacidad */
   z-index: 1;
 }
 
