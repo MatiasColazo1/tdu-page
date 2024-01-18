@@ -1,8 +1,7 @@
 .content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ 
   min-height: 100vh;
+ 
   margin: 0;
 }
 
@@ -23,7 +22,7 @@ h1 {
   color: #fff;
   font-family: 'Rye', serif;
   text-transform: uppercase;
-  font-size: 70px;
+  
 }
 
 h2 {
@@ -33,7 +32,7 @@ h2 {
 
 .banner h1 {
   margin: 0;
-  font-size: 2em;
+  font-size: 50px;
 }
 
 @keyframes zoomBackground {
