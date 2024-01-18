@@ -28,9 +28,9 @@
 <div class="menu-overlay" *ngIf="isMenuOpen">
     <!-- Contenido del menú -->
     <ul>
-        <li class="menu"><a routerLink="/">Inicio</a></li>
-        <li class="menu"><a routerLink="/cursos">Cursos</a></li>
-        <li class="menu"><a routerLink="#">Contacto</a></li>
+        <li class="menu"><a routerLink="/inicio" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a></li>
+        <li class="menu"><a routerLink="/cursos" routerLinkActive="active">Cursos</a></li>
+        <li class="menu"><a routerLink="#" routerLinkActive="active">Contacto</a></li>
         <!-- Otros elementos del menú -->
     </ul>
 </div>
