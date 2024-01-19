@@ -9,9 +9,8 @@
     position: relative;
     width: 100%;
     height: 48vh;
-    background-image: url('../../../assets/tdu-banner2.jpg');
+    background-image: url('../../../assets/productos-tdu.jpg');
     background-size: cover;
-    background-position: center;
     animation: zoomBackground 10s infinite alternate;
     display: flex;
     justify-content: center;
@@ -26,7 +25,7 @@
   }
   
   h2 {
-   color: #8F0408;
+   color: #c40209;
    font-family: Roboto Slab;
   }
   
