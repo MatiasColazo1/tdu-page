@@ -48,3 +48,24 @@
   height: auto; /* Mantiene la proporción del logo */
   z-index: 10; /* Asegura que el logo esté por encima del fondo */
 }
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.logo {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.logo:first-child {
+  animation-delay: 0s;
+}
+
+.logo:last-child {
+  animation-delay: 1s; /* Ajusta este tiempo según sea necesario */
+}
