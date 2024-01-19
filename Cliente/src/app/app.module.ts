@@ -11,6 +11,8 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { SobremiComponent } from './components/sobremi/sobremi.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CursosyjornadasComponent } from './components/cursosyjornadas/cursosyjornadas.component';
+import { JornadasComponent } from './components/jornadas/jornadas.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactoComponent,
     SobremiComponent,
     ProductosComponent,
-    FooterComponent
+    FooterComponent,
+    CursosyjornadasComponent,
+    JornadasComponent
   ],
   imports: [
     BrowserModule,

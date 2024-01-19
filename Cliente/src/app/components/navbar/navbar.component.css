@@ -233,6 +233,10 @@ ul {
   animation-delay: 1.2s;
 }
 
+.menu-overlay ul li:nth-child(5) {
+  animation-delay: 1.5s;
+}
+
 
 
 
