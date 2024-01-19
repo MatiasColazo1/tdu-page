@@ -3,7 +3,6 @@ footer {
   background: #0E0A0A;
   color: #adadad;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
 }
 
 footer .centered {
@@ -126,14 +125,14 @@ footer .bottom-bar {
 } 
 
 .social i:hover {
-  color: #8F0408;
+  color: #ac0d12;
 }
 
 
 /* Typography */
 footer h3 {
   
-  
+  font-family: 'Rye';
   margin-bottom: 0;
 }
 
@@ -142,6 +141,7 @@ footer li {
   font-weight: 400;
   letter-spacing: 0.05em;
   margin: 10px 0;
+  font-family:'Open Sans';
 }
 
 footer a {
@@ -152,7 +152,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #fff34a;
+  color: #FFD700;
 }
 
 /* Misc CSS */
