@@ -28,7 +28,7 @@ ul {
 
   .example-1 .icon-content .link:hover {
     box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
-    background-color: rgb(129, 127, 127);
+    background-color: rgba(122, 122, 122, 0.47);
   }
 
   .example-1 .icon-content .link svg {
@@ -37,15 +37,15 @@ ul {
   }
 
   .example-1 .icon-content .link[data-social="instagram"]:hover {
-    color: #ea4c89;
+    color: #ff5395;
   }
 
   .example-1 .icon-content .link[data-social="facebook"]:hover {
-    color: #0088cc;
+    color: #2ab8ff;
   }
 
   .example-1 .icon-content .link[data-social="whatsapp"]:hover {
-    color: #1db954;
+    color: #00db4d;
   }
 
 .burger {
@@ -120,6 +120,10 @@ ul {
 }
 
 .tdu {
+  color: #fff;
+}
+
+.tdu:hover {
   color: #fff;
 }
 

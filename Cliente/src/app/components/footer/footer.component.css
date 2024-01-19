@@ -7,7 +7,7 @@ footer {
 }
 
 footer .centered {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -101,38 +101,6 @@ footer .bottom-bar {
     padding: 0;
   }
 
-  footer .centered .footer-navigation .footer-links-holder h3 {
-    margin: 0;
-    padding: 10px 20px;
-    border-top: #000 1px solid;
-    cursor: pointer;
-  }
-
-  footer .centered .footer-navigation .footer-links-holder h3::after {
-    float: inline-end;
-    margin-right: 10px;
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: 7px;
-    width: 7px;
-    height: 7px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
-    -moz-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
-    -webkit-transition: transform 0.5s;
-    transition: transform 0.5s;
-  }
-
-  footer .centered .footer-navigation .footer-links-holder .footer-links {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 20px;
-  }
-
   footer .centered .footer-navigation .footer-links-holder.active h3::after {
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -164,15 +132,14 @@ footer .bottom-bar {
 
 /* Typography */
 footer h3 {
-  font-weight: lighter;
-  font-style: italic;
+  
+  
   margin-bottom: 0;
 }
 
 footer p,
 footer li {
   font-weight: 400;
-  text-transform: uppercase;
   letter-spacing: 0.05em;
   margin: 10px 0;
 }
@@ -198,14 +165,4 @@ footer a:hover {
   width: 0;
   height: 0;
   clear: both;
-}
-
-body {
-  margin: 0;
-}
-
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
