@@ -13,12 +13,12 @@ footer .centered {
 }
 
 footer .centered .footer-logo {
-  width: 15%;
+  width: 10%;
   color: #000;
 }
 
 footer .centered .footer-logo:hover {
-  width: 15%;
+  width: 9%;
 }
 
 footer .centered .footer-logo img.logo {
@@ -131,7 +131,7 @@ footer .bottom-bar {
 
 /* Typography */
 footer h3 {
-  
+  color: #FFD700;
   font-family: 'Rye';
   margin-bottom: 0;
 }
@@ -145,14 +145,19 @@ footer li {
 }
 
 footer a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   -webkit-transition: color 0.5s, background 0.5s;
   transition: color 0.5s, background 0.5s;
 }
 
 footer a:hover {
-  color: #FFD700;
+  color: #ac0d12;
+}
+
+.footer-contact .bx{
+  margin: 6px;
+  color: #ac0d12;
 }
 
 /* Misc CSS */
