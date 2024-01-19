@@ -1,7 +1,5 @@
 .content {
- 
     min-height: 100vh;
-   
     margin: 0;
   }
   
@@ -55,4 +53,39 @@
     right: 0;
     bottom: 0;
     z-index: 1;
+  }
+
+
+
+
+  .info {
+    max-width: 30%; 
+  }
+
+  .texto-info {
+    font-family:'Roboto';
+    color: #bdbdbd;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    font-weight: 300;
+  }
+  
+ .imagen {
+  max-width: 30%;
+  height: auto;
+  margin-right: 40px;
+}
+
+  
+
+  h6{
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 32px;
   }
