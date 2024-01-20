@@ -152,12 +152,24 @@ ul {
   width: auto; 
   margin-left: 70px;
   font-family: 'Rye', serif;
-  color: #ffffff;
   font-size: 30px;
+  animation: changeColor 8s infinite alternate; /* 6 segundos para un ciclo, cambia de color y vuelve */
 }
 
-.logonav:hover{
-  color: #FFD700; 
+.logonav:hover {
+  color: #FFD700; /* Cambio de color al pasar el mouse */
+}
+
+@keyframes changeColor {
+  0% {
+    color: #ffffff; /* Color inicial */
+  }
+  50% {
+    color: #FFD700; /* Color intermedio */
+  }
+  100% {
+    color: #ffffff; /* Color final, igual al inicial */
+  }
 }
 
 .menu a {

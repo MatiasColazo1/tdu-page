@@ -128,3 +128,25 @@
     transform: scale(1.05);
     background-color: rgba(114, 0, 4, 0.856);
   }
+
+  .card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+    color: #fff;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Rye', serif;
+}
+
+.card-content p {
+    margin: 10px 0;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
