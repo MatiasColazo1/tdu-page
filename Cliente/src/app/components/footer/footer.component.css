@@ -17,10 +17,6 @@ footer .centered .footer-logo {
   color: #000;
 }
 
-footer .centered .footer-logo:hover {
-  width: 9%;
-}
-
 footer .centered .footer-logo img.logo {
   padding: 10px;
   max-width: 100%;
@@ -141,7 +137,8 @@ footer li {
   font-weight: 400;
   letter-spacing: 0.05em;
   margin: 10px 0;
-  font-family:'Open Sans';
+  font-family:'Roboto';
+  font-size: 20px;
 }
 
 footer a {
