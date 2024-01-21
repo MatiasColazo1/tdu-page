@@ -67,7 +67,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     margin: 40px;
   }
   
@@ -131,22 +131,29 @@
 
   .card-content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     z-index: 3;
     color: #fff;
+    margin-bottom: 100px;
 }
 
 .card-content h3 {
     margin: 0;
-    font-size: 24px;
+    font-size: 42px;
     font-family: 'Rye', serif;
 }
 
 .card-content p {
     margin: 10px 0;
-    font-size: 16px;
+    font-size: 24px;
     font-family: 'Roboto';
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s; /* Transición suave */
+}
+
+/* Cuando se hace hover sobre la tarjeta, el párrafo se vuelve visible */
+.card:hover .card-content p {
+  visibility: visible;
+  opacity: 1;
 }
