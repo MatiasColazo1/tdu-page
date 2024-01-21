@@ -57,3 +57,59 @@ h2 {
   z-index: 1;
 }
 
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+
+
+.texto {
+  width: 40%; /* Ajusta según tus necesidades */
+  color: #fff;
+}
+
+.imagen {
+
+}
+
+.lista-circular {
+  list-style: none;
+  counter-reset: lista-numerada;
+  padding-left: 0;
+}
+
+.lista-circular li {
+  counter-increment: lista-numerada;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.lista-circular li::before {
+  content: counter(lista-numerada);
+  color: #fff;
+  width: 2em;
+  height: 2em;
+  line-height: 1.85em;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 20px;
+  border: 1px solid #fff;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.lista-circular h6 {
+  margin: 0 10px 5px 0;
+  font-size: 1em;
+}
+
+/* Asegúrate de que el span se alinee con el número */
+.lista-circular li span {
+  display: inline-block;
+  margin-left: 10px;
+}
