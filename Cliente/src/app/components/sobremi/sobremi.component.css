@@ -56,7 +56,12 @@
   }
 
 
-
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
 
   .info {
     max-width: 30%; 

@@ -58,3 +58,18 @@
   }
   
   
+
+  .contenedor-lista {
+    max-width: 600px; /* Ajusta esto según tus necesidades */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.mi-lista-procesos li {
+    background-color: #f0f0f0; /* Fondo de cada elemento de la lista */
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+    padding: 10px;
+   
+}
