@@ -90,8 +90,9 @@ h2 {
   display: flex;
   margin-bottom: 100px;
   position: relative;
+   min-height: 100px;
   padding-left: 70px;
-  /* Espacio para el número y la línea */
+ 
 }
 
 .lista-circular li::before {
@@ -117,7 +118,7 @@ h2 {
 
 .lista-circular h6 {
   margin: 0 10px 5px 0;
-  font-size: 1em;
+  font-size: 18px;
 }
 
 /* Asegúrate de que el span se alinee con el número */
@@ -141,6 +142,9 @@ h2 {
 .lista-circular li:last-child::after {
   display: none;
 }
+
+
+
 
 .btn {
   color: #ffffff;
