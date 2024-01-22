@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 .content {
  
     min-height: 100vh;
@@ -27,7 +29,7 @@
   
   h2 {
    color: #8F0408;
-   font-family: Roboto Slab;
+   font-family: 'Roboto Slab';
    font-weight: 700!important;
   }
   
