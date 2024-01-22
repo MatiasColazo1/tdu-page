@@ -148,6 +148,7 @@ ul {
 }
 
 .logonav {
+  text-decoration: none;
   height: auto;
   width: auto; 
   margin-left: 70px;
