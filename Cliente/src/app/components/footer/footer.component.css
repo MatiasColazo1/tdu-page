@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 /* HTML Set up */
 footer {
   background: #0E0A0A;
@@ -159,8 +161,8 @@ footer li {
   font-weight: 400;
   letter-spacing: 0.05em;
   margin: 10px 0;
-  font-family:'Roboto';
-  font-size: 20px;
+  font-family:'Roboto Slab';
+  font-size: 17px;
   list-style-type: none;
 
 }
