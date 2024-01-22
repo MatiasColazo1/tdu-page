@@ -1,5 +1,3 @@
-
-
 .banner {
   position: relative;
   width: 100%;
@@ -17,12 +15,12 @@ h1 {
   color: #fff;
   font-family: 'Rye', serif;
   text-transform: uppercase;
-  
+
 }
 
 h2 {
- color: #8F0408;
- font-family: Roboto Slab;
+  color: #8F0408;
+  font-family: Roboto Slab;
 }
 
 .banner h1 {
@@ -68,7 +66,7 @@ h2 {
   color: #fff;
 }
 
-.info{
+.info {
   margin-bottom: 100px;
 }
 
@@ -92,7 +90,8 @@ h2 {
   display: flex;
   margin-bottom: 100px;
   position: relative;
-  padding-left: 70px; /* Espacio para el número y la línea */
+  padding-left: 70px;
+  /* Espacio para el número y la línea */
 }
 
 .lista-circular li::before {
@@ -103,13 +102,17 @@ h2 {
   line-height: 1.85em;
   border-radius: 50%;
   text-align: center;
-  position: absolute; /* Posición absoluta dentro del LI */
-  left: 0; /* Alineado a la izquierda del LI */
-  top: 0; /* Alineado a la parte superior del LI */
+  position: absolute;
+  /* Posición absoluta dentro del LI */
+  left: 0;
+  /* Alineado a la izquierda del LI */
+  top: 0;
+  /* Alineado a la parte superior del LI */
   margin-right: 20px;
   border: 1px solid #fff;
   font-size: 26px;
-  z-index: 1; /* Asegura que el número esté sobre la línea */
+  z-index: 1;
+  /* Asegura que el número esté sobre la línea */
 }
 
 .lista-circular h6 {
@@ -127,14 +130,54 @@ h2 {
   content: '';
   position: absolute;
   left: 1.5em;
-  top: 3.2em; 
- 
+  top: 3.2em;
+
   bottom: -100px;
-  border-left: 2px solid #fff; 
+  border-left: 2px solid #fff;
   z-index: 0
 }
 
 /* No dibujar una línea en el último elemento */
 .lista-circular li:last-child::after {
   display: none;
+}
+
+.btn {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  display: block;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  margin-top: 20px;
+  width: 100%;
+
+}
+
+.btn:hover {
+  color: rgb(0, 0, 0);
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: #ffffff;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.btn:hover::before {
+  width: 160%;
 }
