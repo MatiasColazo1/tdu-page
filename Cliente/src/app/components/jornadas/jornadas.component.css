@@ -22,6 +22,7 @@ h1 {
 h2 {
   color: #8F0408;
   font-family: 'Roboto Slab';
+  font-weight: 700 !important;
 }
 
 .banner h1 {

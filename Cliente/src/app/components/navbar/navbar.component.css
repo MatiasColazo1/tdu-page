@@ -154,7 +154,7 @@ ul {
   margin-left: 70px;
   font-family: 'Rye', serif;
   font-size: 30px;
-  animation: changeColor 8s infinite alternate; /* 6 segundos para un ciclo, cambia de color y vuelve */
+  color: #fff;
 }
 
 .logonav:hover {

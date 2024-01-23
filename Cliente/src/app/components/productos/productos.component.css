@@ -27,9 +27,10 @@
   }
   
   h2 {
-   color: #c40209;
-   font-family: 'Roboto Slab';
-  }
+    color: #8F0408;
+    font-family: 'Roboto Slab';
+    font-weight: 700!important;
+   }
   
   .banner h1 {
     margin: 0;
