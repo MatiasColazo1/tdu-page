@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 .banner {
   position: relative;
   width: 100%;
@@ -22,11 +23,19 @@ h1 {
 h2 {
   color: #8F0408;
   font-family: 'Roboto Slab';
+  font-weight: 700 !important;
 }
 
 .banner h1 {
   margin: 0;
   font-size: 50px;
+}
+
+h6 {
+  margin: 0 10px 5px 0;
+  font-size: 21px;
+  font-family: 'Rye', serif;
+  text-transform: uppercase;
 }
 
 @keyframes zoomBackground {
@@ -92,9 +101,9 @@ h2 {
   display: flex;
   margin-bottom: 100px;
   position: relative;
-   min-height: 100px;
+  min-height: 100px;
   padding-left: 70px;
- 
+
 }
 
 .lista-circular li::before {
@@ -122,8 +131,9 @@ h2 {
   margin: 0 10px 5px 0;
   font-size: 18px;
   font-family: 'Rye', serif;
-  
+
 }
+
 
 /* Asegúrate de que el span se alinee con el número */
 .lista-circular li span {
@@ -193,8 +203,10 @@ h2 {
 
 
 button {
-  padding: 0;
   margin: 0;
+  margin-top: 14px;
+  padding: 0;
+
   border: none;
   background: none;
   cursor: pointer;
@@ -214,9 +226,9 @@ button {
 button p {
   margin: 0;
   position: relative;
-  font-size: 20px;
+  font-size: 17px;
   color: var(--primary-color);
-  transition: color 0.3s ease-out; 
+  transition: color 0.3s ease-out;
 }
 
 button::after {
@@ -255,7 +267,8 @@ button svg {
 }
 
 button:hover p {
-  color: var(--hovered-color); /* cambio de color al pasar el mouse */
+  color: var(--hovered-color);
+  /* cambio de color al pasar el mouse */
 }
 
 a {
@@ -268,11 +281,13 @@ a {
 }
 
 .whatsapp-link {
-  color: #25D366; /* Color oficial de WhatsApp */
+  color: #25D366;
+  /* Color oficial de WhatsApp */
   text-decoration: none;
 }
 
 .instagram-link {
-  color: #C13584; /* Color oficial de Instagram */
+  color: #C13584;
+  /* Color oficial de Instagram */
   text-decoration: none;
 }

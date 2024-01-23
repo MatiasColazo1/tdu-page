@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 .content {
     min-height: 100vh;
     margin: 0;
@@ -26,10 +26,19 @@
   }
   
   h2 {
-   color: #8F0408;
-   font-family: 'Roboto Slab';
+    color: #8F0408;
+    font-family: 'Roboto Slab';
+    font-weight: 700 !important;
   }
   
+  h6 {
+    color: #fff;
+    margin: 0 10px 5px 0;
+    font-size: 22px;
+    font-family: 'Rye', serif;
+    text-transform: uppercase;
+  }
+
   .banner h1 {
     margin: 0;
     font-size: 50px;
@@ -71,7 +80,7 @@
 
   .texto-info {
     font-family:'Roboto Slab';
-    color: #bdbdbd;
+    color: #f8f8f8;
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 24px;
@@ -83,16 +92,3 @@
   height: auto;
   margin-right: 40px;
 }
-
-  
-
-  h6{
-    font-family: 'Roboto Slab';
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 1;
-    margin-bottom: 32px;
-  }
