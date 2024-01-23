@@ -63,8 +63,9 @@ h2 {
 
 .texto {
   width: 40%;
-  margin-right: 20px;
+  margin-right: 24px;
   color: #fff;
+  font-family: 'Roboto Slab';
 }
 
 .info {
@@ -258,5 +259,20 @@ button:hover p {
 }
 
 a {
+  text-decoration: none;
+}
+
+.local-link {
+  color: red;
+  text-decoration: none;
+}
+
+.whatsapp-link {
+  color: #25D366; /* Color oficial de WhatsApp */
+  text-decoration: none;
+}
+
+.instagram-link {
+  color: #C13584; /* Color oficial de Instagram */
   text-decoration: none;
 }
