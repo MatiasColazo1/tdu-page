@@ -44,6 +44,11 @@
     color: #e9e9e9;
   }
 
+  a:hover{
+    text-decoration: none;
+    color: #8F0408;
+  }
+
   h3 {
     position: relative; /* Necesario para posicionar ::before y ::after respecto a h3 */
     display: inline-block; 
