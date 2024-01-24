@@ -13,6 +13,7 @@ import { ProductosComponent } from './components/productos/productos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CursosyjornadasComponent } from './components/cursosyjornadas/cursosyjornadas.component';
 import { JornadasComponent } from './components/jornadas/jornadas.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { JornadasComponent } from './components/jornadas/jornadas.component';
     ProductosComponent,
     FooterComponent,
     CursosyjornadasComponent,
-    JornadasComponent
+    JornadasComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
