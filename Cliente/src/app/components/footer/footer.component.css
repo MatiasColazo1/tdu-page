@@ -80,6 +80,10 @@ footer .bottom-bar {
 
 /* Responsive Tablet Sizes */
 @media only screen and (max-width: 749px) {
+  footer{
+    text-align: center;
+  }
+
   footer .centered {
     flex-wrap: wrap;
   }
@@ -100,6 +104,14 @@ footer .bottom-bar {
 
   footer .centered .footer-navigation .footer-links-holder {
     padding: 0 20px;
+  }
+  
+  footer .centered .footer-logo img.logo{
+    max-width: 30%;
+  }
+
+  footer .centered .footer-logo{
+    margin: 0 !important;
   }
 }
 
