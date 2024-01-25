@@ -110,9 +110,7 @@ footer .bottom-bar {
     max-width: 30%;
   }
 
-  footer .centered .footer-logo{
-    margin: 0 !important;
-  }
+ 
 }
 
 /* Responsive Mobile Sizes */
@@ -120,6 +118,8 @@ footer .bottom-bar {
   footer .centered .footer-logo {
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
 
   footer .centered .footer-contact {

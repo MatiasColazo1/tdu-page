@@ -283,7 +283,7 @@ ul {
 @media screen and (max-width: 768px) {
   .logonav {
     font-size: 20px;
-    margin-left: 2px;
+    margin-left: 5px;
     margin-bottom: 10px;
   }
 
@@ -296,6 +296,23 @@ ul {
   }
 
   .example-1{
-    margin-right: 2px;
+    margin-right: 5px;
+  }
+
+  .burger{
+  width: 25px;
+  height: 15px;
+  }
+
+  .burger.menu-open span:nth-of-type(1) {
+    top: 0px;
+    left: 3px;
+    transform: rotate(45deg);
+  }
+
+  .burger.menu-open span:nth-of-type(3) {
+    top: 18px; /* Ajusta esta posición */
+    left: 2px;
+    transform: rotate(-45deg);
   }
 }
