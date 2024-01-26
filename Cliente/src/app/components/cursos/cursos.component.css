@@ -365,3 +365,26 @@ a {
     font-size: 15px;
   }
 }
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .lista-circular li span {
+    margin-left: 28px;
+  }
+
+  .lista-circular h6 {
+    margin: 30px 10px 20px 40px;
+    
+  
+  }
+
+  .lista-circular li {
+    padding-left: 26px;
+  }
+
+  .lista-circular li::after {
+    left: 1.5em;
+    top: 4.5em;
+    bottom: -22px;
+}
+
+}
