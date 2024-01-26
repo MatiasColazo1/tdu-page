@@ -68,6 +68,7 @@
 
 
   .contenedor {
+  
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -87,17 +88,30 @@
     font-weight: 300;
   }
   
- .imagen {
-  max-width: 30%;
-  height: auto;
-  margin-right: 40px;
-}
 
-.imagen:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-}
 
+  .contenedor-imagenes {
+    max-width: 30%;
+    margin-right: 40px;
+  }
+  
+  .imagen {
+    width: 100%;
+    height: auto;
+    display: block; /* Asegúrate de que las imágenes ocupen el espacio necesario */
+  }
+  
+  #imagen2 {
+    display: none; /* Inicialmente oculta */
+  }
+  
+  .contenedor-imagenes:hover #imagen2 {
+    display: block; /* Se muestra al pasar el ratón */
+  }
+  
+  .contenedor-imagenes:hover #imagen1 {
+    display: none; /* Se oculta al pasar el ratón */
+  }
 @media screen and (max-width: 768px) {
 
 .contenedor{
