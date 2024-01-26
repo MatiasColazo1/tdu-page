@@ -266,3 +266,98 @@ button:hover p {
 a {
   text-decoration: none;
 }
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto, .imagen {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .lista-circular li {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 0;
+    min-height: 0;
+  }
+
+  .lista-circular li span {
+    margin-left: 20px;
+  }
+
+  .lista-circular h6 {
+    margin: 30px 10px 20px 30px;
+    
+  
+  }
+
+  .lista-circular li::after {
+    left: 1.2em;
+    top: 3.9em;
+    bottom: -22px;
+}
+
+
+.lista-circular li::before {
+  top: 22px;
+}
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .texto {
+    width: 95%;
+  }
+
+  .imagen {
+    width: 95%;
+  }
+
+  .lista-circular li {
+    padding-left: 20px;
+    margin-bottom: 0;
+    min-height: 0;
+  }
+
+  .lista-circular li::before {
+    font-size: 20px;
+  }
+
+  .lista-circular li span {
+    margin-left: 20px;
+  }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .lista-circular li span {
+    margin-left: 28px;
+  }
+
+  .lista-circular h6 {
+    margin: 30px 10px 20px 40px;
+    
+  
+  }
+
+  .lista-circular li {
+    padding-left: 26px;
+  }
+
+  .lista-circular li::after {
+    left: 1.5em;
+    top: 4.5em;
+    bottom: -22px;
+}
+
+}
