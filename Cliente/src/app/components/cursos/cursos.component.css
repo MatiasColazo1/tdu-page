@@ -131,7 +131,6 @@ h6 {
   margin: 0 10px 5px 0;
   font-size: 18px;
   font-family: 'Rye', serif;
-
 }
 
 
@@ -311,7 +310,30 @@ a {
     flex-direction: column;
     align-items: center;
     padding-left: 10px;
+    margin-bottom: 0;
+    min-height: 0;
   }
+
+  .lista-circular li span {
+    margin-left: 20px;
+  }
+
+  .lista-circular h6 {
+    margin: 30px 10px 20px 30px;
+    
+  
+  }
+
+  .lista-circular li::after {
+    left: 1.2em;
+    top: 3.9em;
+    bottom: -22px;
+}
+
+
+.lista-circular li::before {
+  top: 22px;
+}
 }
 
 /* Pantallas pequeñas (móviles) */
@@ -326,10 +348,16 @@ a {
 
   .lista-circular li {
     padding-left: 20px;
+    margin-bottom: 0;
+    min-height: 0;
   }
 
   .lista-circular li::before {
     font-size: 20px;
+  }
+
+  .lista-circular li span {
+    margin-left: 20px;
   }
 
   .btn {
