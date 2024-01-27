@@ -137,3 +137,19 @@
   opacity: 0;
 }
   
+
+@media (max-width: 768px) {
+  .carta-container {
+    max-width: none;
+    width: 80%;
+  }
+
+  .row{
+    padding: 0 !important;
+  }
+
+  .banner h1 {
+    margin: 0;
+    font-size: 30px;
+  }
+}
