@@ -103,6 +103,7 @@
   
   #imagen2 {
     display: none; /* Inicialmente oculta */
+    transform: scale(0.95);
   }
   
   .contenedor-imagenes:hover #imagen2 {
