@@ -40,6 +40,13 @@ h2 {
   }
 }
 
+h6 {
+  margin: 0 10px 5px 0;
+  font-size: 21px;
+  font-family: 'Rye', serif;
+  text-transform: uppercase;
+}
+
 
 
 .banner::before {
@@ -71,8 +78,26 @@ h2 {
 .info {
   margin-bottom: 100px;
   font-family: 'Roboto Slab';
-font-size: 20px;
 }
+
+.local-link {
+  color: red;
+  text-decoration: none;
+}
+
+.whatsapp-link {
+  color: #25D366;
+  /* Color oficial de WhatsApp */
+  text-decoration: none;
+}
+
+.instagram-link {
+  color: #C13584;
+  /* Color oficial de Instagram */
+  text-decoration: none;
+}
+
+
 
 .imagen {
   width: 20%;
