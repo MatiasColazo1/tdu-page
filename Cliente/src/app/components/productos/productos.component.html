@@ -5,8 +5,62 @@
 </div>
 
 <div style="height: 100px"></div>
+
+<div class="tab-container">
+  <input type="radio" name="tab" id="tab1" class="tab tab--1" [(ngModel)]="selectedTab" value="1" />
+  <label class="tab_label" for="tab1">Todos los productos</label>
+
+  <input type="radio" name="tab" id="tab2" class="tab tab--2" [(ngModel)]="selectedTab" value="2" />
+  <label class="tab_label" for="tab2">Esmaltes tradicional</label>
+
+  <input type="radio" name="tab" id="tab3" class="tab tab--3" [(ngModel)]="selectedTab" value="3" />
+  <label class="tab_label" for="tab3">Esmaltes semipermanente</label>
+
+  <input type="radio" name="tab" id="tab4" class="tab tab--4" [(ngModel)]="selectedTab" value="4" />
+  <label class="tab_label" for="tab3">Top coat</label>
+
+  <input type="radio" name="tab" id="tab5" class="tab tab--5" [(ngModel)]="selectedTab" value="5" />
+  <label class="tab_label" for="tab3">Base coat</label>
+
+  <input type="radio" name="tab" id="tab6" class="tab tab--6" [(ngModel)]="selectedTab" value="6" />
+  <label class="tab_label" for="tab3">Preparadores y adherentes</label>
+  
+  <input type="radio" name="tab" id="tab7" class="tab tab--7" [(ngModel)]="selectedTab" value="7" />
+  <label class="tab_label" for="tab3">Polimeros</label>
+
+  <input type="radio" name="tab" id="tab8" class="tab tab--8" [(ngModel)]="selectedTab" value="8" />
+  <label class="tab_label" for="tab3">Monomeros</label>
+
+  <input type="radio" name="tab" id="tab9" class="tab tab--9" [(ngModel)]="selectedTab" value="9" />
+  <label class="tab_label" for="tab3">Geles solidos</label>
+
+  <input type="radio" name="tab" id="tab10" class="tab tab--10" [(ngModel)]="selectedTab" value="10" />
+  <label class="tab_label" for="tab3">Adhesivos para piedreria</label>
+
+  <input type="radio" name="tab" id="tab11" class="tab tab--11" [(ngModel)]="selectedTab" value="11" />
+  <label class="tab_label" for="tab3">Limas</label>
+
+  <input type="radio" name="tab" id="tab12" class="tab tab--12" [(ngModel)]="selectedTab" value="12" />
+  <label class="tab_label" for="tab3">Herramientas</label>
+
+  <input type="radio" name="tab" id="tab13" class="tab tab--13" [(ngModel)]="selectedTab" value="13" />
+  <label class="tab_label" for="tab3">Decoracion</label>
+
+  <input type="radio" name="tab" id="tab14" class="tab tab--14" [(ngModel)]="selectedTab" value="14" />
+  <label class="tab_label" for="tab3">Pinceleria</label>
+
+  <input type="radio" name="tab" id="tab15" class="tab tab--15" [(ngModel)]="selectedTab" value="15" />
+  <label class="tab_label" for="tab3">Cabinas</label>
+
+  <input type="radio" name="tab" id="tab16" class="tab tab--16" [(ngModel)]="selectedTab" value="16" />
+  <label class="tab_label" for="tab3">Apoyamanos</label>
+
+  <div class="indicator"></div>
+</div>
+<div style="height: 50px"></div>
+
 <div class="container">
-  <div class="row d-flex justify-content-center">
+  <div class="row d-flex justify-content-center" *ngIf="selectedTab === '1'">
     <!-- Tarjeta 1 -->
     <div class="col-md-4 mb-3">
       <div class="carta-container">
@@ -88,6 +142,13 @@
     </div>
 
     <!-- Agrega más tarjetas según sea necesario -->
+  </div>
+  <div class="row d-flex justify-content-center" *ngIf="selectedTab === '2'">
+    <!-- Tarjetas del Grupo 2 -->
+  </div>
+
+  <div class="row d-flex justify-content-center" *ngIf="selectedTab === '3'">
+    <!-- Tarjetas del Grupo 3 -->
   </div>
 </div>
 <div style="height: 100px"></div>

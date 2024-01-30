@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CursosyjornadasComponent } from './components/cursosyjornadas/cursosyjornadas.component';
 import { JornadasComponent } from './components/jornadas/jornadas.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,11 +29,12 @@ import { LoaderComponent } from './components/loader/loader.component';
     FooterComponent,
     CursosyjornadasComponent,
     JornadasComponent,
-    LoaderComponent
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
