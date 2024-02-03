@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ProductosComponent {
   selectedTab: string = '1';
+  menuOpen: boolean = false;
+  
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 }

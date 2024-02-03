@@ -237,3 +237,51 @@
     font-size: 30px;
   }
 }
+
+
+
+
+
+
+
+.hamburger-menu {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: #888;
+}
+
+.menu-container {
+  display: none;
+  /* Resto de tu estilos */
+}
+
+.menu-container.open {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
