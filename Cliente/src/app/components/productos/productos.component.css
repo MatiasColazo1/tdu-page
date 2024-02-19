@@ -42,7 +42,39 @@
   }
 
 
-  /* Remove this container when use*/
+  label {
+    position: relative;
+  }
+  
+  label::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: blueviolet;
+    display: block;
+    transition: width 0.5s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  label:hover::before {
+    width: 100%;
+  }
+  
+  .tab {
+    width: 130px;
+    height: 28px;
+    position: absolute;
+    z-index: 99;
+    outline: none;
+    opacity: 0;
+  }
+  
+  .tab_label {
+    cursor: pointer;
+    color: #fff;
+  }
 
 
 
