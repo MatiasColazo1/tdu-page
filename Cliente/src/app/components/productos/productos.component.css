@@ -44,13 +44,14 @@
 
   label {
     position: relative;
+    margin-bottom: 5px;
   }
   
   label::before {
     content: '';
     width: 0;
     height: 2px;
-    background: blueviolet;
+    background: #ac0d12;
     display: block;
     transition: width 0.5s;
     position: absolute;
@@ -60,6 +61,10 @@
   
   label:hover::before {
     width: 100%;
+  }
+
+  label:hover{
+    color: #ac0d12;
   }
   
   .tab {
@@ -217,34 +222,40 @@
 
 
 
-
-
-.hamburger-menu {
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.bar {
+.texto{
   width: 100%;
-  height: 4px;
-  background-color: #888;
-}
-
-.menu-container {
-  display: none;
-  /* Resto de tu estilos */
-}
-
-.menu-container.open {
-  display: block;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: #fff;
+  font-family: 'Roboto Slab';
 }
 
 
+h6 {
+  margin: 0 10px 5px 0;
+  text-align: center;
+  font-size: 21px;
+  font-family: 'Rye', serif;
+  text-transform: uppercase;
+  color: #8F0408;
+}
 
+.local-link {
+  color: red;
+  text-decoration: none;
+}
+
+.whatsapp-link {
+  color: #25D366;
+  /* Color oficial de WhatsApp */
+  text-decoration: none;
+}
+
+.instagram-link {
+  color: #C13584;
+  /* Color oficial de Instagram */
+  text-decoration: none;
+}
 
 
 
