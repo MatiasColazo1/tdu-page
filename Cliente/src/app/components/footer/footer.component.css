@@ -90,7 +90,8 @@ footer .bottom-bar {
 
   footer .centered .footer-logo {
     max-width: 250px;
-    width: 50%;
+    width: 100%;
+    justify-content: center;
   }
 
   footer .centered .footer-contact {
@@ -107,7 +108,7 @@ footer .bottom-bar {
   }
   
   footer .centered .footer-logo img.logo{
-    max-width: 30%;
+    max-width: 60%;
   }
 
  

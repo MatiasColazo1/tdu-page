@@ -117,8 +117,7 @@ h3:hover::before {
 .card-container {
   margin-top: 10px;
   position: relative;
-  width: 465px; /* Reducir el ancho un 3% */
-  height: 291px; /* Reducir el alto un 3% */
+  margin-left: initial;
 }
 
 .embed-responsive-item {
@@ -180,4 +179,30 @@ body {
 	}
 }
 
+@media only screen and (max-width: 1037px) {
+  .card-container {
+    width: calc(60% + 10 * ((100vw - 343px) / 694)); /* Ajustar el ancho entre 20% y 30% */
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+  }
 
+  .embed-responsive-item iframe {
+    width: 50%; /* Ajustar el ancho al 100% */
+    height: 50%; /* Ajustar la altura al 100% */
+    max-width: 50%; /* Limitar el ancho máximo */
+    max-height: 50%; /* Limitar la altura máxima */
+  }
+}
+
+@media screen and (min-width: 1035px) {
+  .card-container {
+    width: 30%; /* Mantener el tamaño del contenedor del mapa */
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+  }
+
+  .embed-responsive-item iframe {
+    width: 100%; /* Ajustar el ancho al 100% */
+    height: 100%; /* Ajustar la altura al 100% */
+    max-width: 100%; /* Limitar el ancho máximo */
+    max-height: 100%; /* Limitar la altura máxima */
+  }
+}
