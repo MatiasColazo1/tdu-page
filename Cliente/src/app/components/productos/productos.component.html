@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 <div class="banner d-flex flex-column justify-content-center align-items-center text-center">
   <h1>Distribuidora TDU</h1>
-  <h2>Toda la informacion sobre los productos</h2>
+  <h2>Productos</h2>
 </div>
 
 <div style="height: 100px"></div>
@@ -32,77 +32,73 @@
     <div class="col-lg-3">
       <div class="d-flex flex-column">
         <h5 class="categorias">Categorias</h5>
-        <input type="radio" name="tab" id="tab1" class="tab tab--1" [(ngModel)]="selectedTab" value="1" />
-        <div class="label-container">
-          <label class="tab_label" for="tab1">Todos los productos</label>
-        </div>
 
-        <input type="radio" name="tab" id="tab2" class="tab tab--2" [(ngModel)]="selectedTab" value="2" />
+        <input type="radio" name="tab" id="tab2" class="tab tab--2" [(ngModel)]="selectedTab" value="1" />
         <div>
           <label class="tab_label" for="tab2">Esmaltes tradicional</label>
         </div>
 
-        <input type="radio" name="tab" id="tab3" class="tab tab--3" [(ngModel)]="selectedTab" value="3" />
+        <input type="radio" name="tab" id="tab3" class="tab tab--3" [(ngModel)]="selectedTab" value="2" />
         <div>
           <label class="tab_label" for="tab3">Esmaltes semipermanente</label>
         </div>
 
-        <input type="radio" name="tab" id="tab4" class="tab tab--4" [(ngModel)]="selectedTab" value="4" />
+        <input type="radio" name="tab" id="tab4" class="tab tab--4" [(ngModel)]="selectedTab" value="3" />
         <div>
           <label class="tab_label" for="tab4">Preparadores y adherentes</label>
         </div>
 
-        <input type="radio" name="tab" id="tab5" class="tab tab--5" [(ngModel)]="selectedTab" value="5" />
+        <input type="radio" name="tab" id="tab5" class="tab tab--5" [(ngModel)]="selectedTab" value="4" />
         <div>
           <label class="tab_label" for="tab5">Polimeros</label>
         </div>
 
-        <input type="radio" name="tab" id="tab6" class="tab tab--6" [(ngModel)]="selectedTab" value="6" />
+        <input type="radio" name="tab" id="tab6" class="tab tab--6" [(ngModel)]="selectedTab" value="5" />
         <div>
           <label class="tab_label" for="tab6">Monomeros</label>
         </div>
 
-        <input type="radio" name="tab" id="tab7" class="tab tab--7" [(ngModel)]="selectedTab" value="7" />
+        <input type="radio" name="tab" id="tab7" class="tab tab--7" [(ngModel)]="selectedTab" value="6" />
         <div>
           <label class="tab_label" for="tab7">Geles</label>
         </div>
 
-        <input type="radio" name="tab" id="tab8" class="tab tab--8" [(ngModel)]="selectedTab" value="8" />
+        <input type="radio" name="tab" id="tab8" class="tab tab--8" [(ngModel)]="selectedTab" value="7" />
         <div>
           <label class="tab_label" for="tab8">Adhesivos para piedreria</label>
         </div>
 
-        <input type="radio" name="tab" id="tab9" class="tab tab--9" [(ngModel)]="selectedTab" value="9" />
+        <input type="radio" name="tab" id="tab9" class="tab tab--9" [(ngModel)]="selectedTab" value="8" />
         <div>
           <label class="tab_label" for="tab9">Limas</label>
         </div>
 
-        <input type="radio" name="tab" id="tab10" class="tab tab--10" [(ngModel)]="selectedTab" value="10" />
+        <input type="radio" name="tab" id="tab10" class="tab tab--10" [(ngModel)]="selectedTab" value="9" />
         <div>
           <label class="tab_label" for="tab10">Tips</label>
         </div>
 
-        <input type="radio" name="tab" id="tab11" class="tab tab--11" [(ngModel)]="selectedTab" value="11" />
+        <input type="radio" name="tab" id="tab11" class="tab tab--11" [(ngModel)]="selectedTab" value="10" />
         <div>
           <label class="tab_label" for="tab11">Herramientas</label>
         </div>
 
-        <input type="radio" name="tab" id="tab12" class="tab tab--12" [(ngModel)]="selectedTab" value="12" />
+        <input type="radio" name="tab" id="tab12" class="tab tab--12" [(ngModel)]="selectedTab" value="11" />
         <div>    
           <label class="tab_label" for="tab12">Decoracion</label>
         </div>
 
-        <input type="radio" name="tab" id="tab13" class="tab tab--13" [(ngModel)]="selectedTab" value="13" />
+        <input type="radio" name="tab" id="tab13" class="tab tab--13" [(ngModel)]="selectedTab" value="12" />
         <div>   
           <label class="tab_label" for="tab13">Pinceleria</label>
         </div>
 
-        <input type="radio" name="tab" id="tab14" class="tab tab--14" [(ngModel)]="selectedTab" value="14" />
+        <input type="radio" name="tab" id="tab14" class="tab tab--14" [(ngModel)]="selectedTab" value="13" />
         <div>   
           <label class="tab_label" for="tab14">Cabinas</label>
         </div>
 
-        <input type="radio" name="tab" id="tab15" class="tab tab--15" [(ngModel)]="selectedTab" value="15" />
+        <input type="radio" name="tab" id="tab15" class="tab tab--15" [(ngModel)]="selectedTab" value="14" />
         <div>
           <label class="tab_label" for="tab15">Apoyamanos</label>
         </div>
@@ -117,90 +113,9 @@
   <!-- Todos los productos -->
     <div class="col-lg-9">
       <div class="row">
-        <div class="row" *ngIf="selectedTab === '1'">
-        
-          <div class="col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/esmalte-tdu.jpg" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Card Hover</p>
-                  <p class="texto-insumos">
-                    Lorem ipsum dolor sit amet, consectetur adipii
-                    voluptas ten mollitia pariatur odit, ab
-                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-                    necessitatibus dignissimos molestias.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/empujador-cuticulas.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Card Hover</p>
-                  <p class="texto-insumos">
-                    Lorem ipsum dolor sit amet, consectetur adipii
-                    voluptas ten mollitia pariatur odit, ab
-                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-                    necessitatibus dignissimos molestias.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <p>Hover me</p>
-                </div>
-                <div class="content">
-                  <p class="heading">Card Hover</p>
-                  <p class="texto-insumos">
-                    Lorem ipsum dolor sit amet, consectetur adipii
-                    voluptas ten mollitia pariatur odit, ab
-                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-                    necessitatibus dignissimos molestias.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tarjeta 4 -->
-          <div class="col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <p>Hover me</p>
-                </div>
-                <div class="content">
-                  <p class="heading">Card Hover</p>
-                  <p class="texto-insumos">
-                    Lorem ipsum dolor sit amet, consectetur adipii
-                    voluptas ten mollitia pariatur odit, ab
-                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-                    necessitatibus dignissimos molestias.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Agrega más tarjetas según sea necesario -->
-        </div>
           <!-- Esmalte tradicional -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '2'">
-          <div class="col-lg-4 col-md-4 mb-3">
+        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '1'">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -216,7 +131,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -232,7 +147,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -251,7 +166,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -272,8 +187,8 @@
         </div>
 
           <!-- Esmalte semipermanente -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '3'">
-          <div class="col-lg-4 col-md-4 mb-3">
+        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '2'">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -292,7 +207,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -311,7 +226,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -330,7 +245,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -349,7 +264,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -368,7 +283,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -387,7 +302,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -406,7 +321,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -428,9 +343,9 @@
         </div>
 
           <!-- Preparadores y adherentes -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '4'">
+        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '3'">
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -449,7 +364,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -468,7 +383,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -487,7 +402,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -506,7 +421,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -529,8 +444,8 @@
 
 
          <!-- Polimeros -->
-         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '5'">
-          <div class="col-lg-4 col-md-4 mb-3">
+         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '4'">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -549,7 +464,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -570,8 +485,8 @@
          </div>
 
          <!-- Monomeros -->
-         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '6'">
-          <div class="col-lg-4 col-md-4 mb-3">
+         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '5'">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -592,8 +507,8 @@
          </div>
 
           <!-- Geles -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '7'">
-          <div class="col-lg-4 col-md-4 mb-3">
+        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '6'">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -611,30 +526,11 @@
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <p>Hover me</p>
-                </div>
-                <div class="content">
-                  <p class="heading">Card Hover</p>
-                  <p class="texto-insumos">
-                    Lorem ipsum dolor sit amet, consectetur adipii
-                    voluptas ten mollitia pariatur odit, ab
-                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-                    necessitatibus dignissimos molestias.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
          <!-- Adhesivos para piedreria -->
-         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '8'">
-          <div class="col-lg-4 col-md-4 mb-3">
+         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '7'">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -653,7 +549,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -671,30 +567,11 @@
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <p>Hover me</p>
-                </div>
-                <div class="content">
-                  <p class="heading">Card Hover</p>
-                  <p class="texto-insumos">
-                    Lorem ipsum dolor sit amet, consectetur adipii
-                    voluptas ten mollitia pariatur odit, ab
-                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-                    necessitatibus dignissimos molestias.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
          </div>
 
           <!-- limas -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '9'">
-          <div class="col-lg-4 col-md-4 mb-3">
+        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '8'">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -713,7 +590,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -732,7 +609,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -751,7 +628,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -772,8 +649,8 @@
         </div>
 
          <!-- tips -->
-         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '10'">
-          <div class="col-lg-4 col-md-4 mb-3">
+         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '9'">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -792,7 +669,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -811,7 +688,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -832,8 +709,8 @@
          </div>
 
          <!-- Herramientas -->
-         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '11'">
-          <div class="col-lg-4 col-md-4 mb-3">
+         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '10'">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -852,7 +729,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -871,7 +748,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -890,7 +767,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -909,7 +786,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -930,8 +807,8 @@
          </div>
 
          <!-- Decoracion -->
-         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '12'">
-          <div class="col-lg-4 col-md-4 mb-3">
+         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '11'">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -950,7 +827,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -969,7 +846,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -988,7 +865,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -1007,7 +884,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -1026,7 +903,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -1045,7 +922,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -1063,34 +940,16 @@
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <p>Hover me</p>
-                </div>
-                <div class="content">
-                  <p class="heading">Card Hover</p>
-                  <p class="texto-insumos">
-                    Lorem ipsum dolor sit amet, consectetur adipii
-                    voluptas ten mollitia pariatur odit, ab
-                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-                    necessitatibus dignissimos molestias.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
          </div>
 
          <!-- Pinceleria -->
-         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '13'">
-          <div class="col-lg-4 col-md-4 mb-3">
+         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '12'">
+
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
-                  <img src="../../../assets/productos/muestrario-natural.png" alt="muestrario-natural" class="img-fluid">
+                  <img src="../../../assets/productos/cepillo.png" alt="cepillo-para-uñas" class="img-fluid">
                 </div>
                 <div class="content">
                   <p class="heading">Card Hover</p>
@@ -1105,26 +964,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/muestrario-natural.png" alt="muestrario-natural" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Card Hover</p>
-                  <p class="texto-insumos">
-                    Lorem ipsum dolor sit amet, consectetur adipii
-                    voluptas ten mollitia pariatur odit, ab
-                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-                    necessitatibus dignissimos molestias.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -1143,7 +983,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -1162,7 +1002,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
@@ -1183,12 +1023,12 @@
          </div>
 
          <!-- Cabinas -->
-         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '14'">
-          <div class="col-lg-4 col-md-4 mb-3">
+         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '13'">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
-                  <p>Hover me</p>
+                  <img src="../../../assets/productos/cabina-flor.png" alt="cabina-flor" class="img-fluid">
                 </div>
                 <div class="content">
                   <p class="heading">Card Hover</p>
@@ -1203,11 +1043,11 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 mb-3">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
-                  <p>Hover me</p>
+                  <img src="../../../assets/productos/cabina-uv-led.png" alt="cabina-uv/led" class="img-fluid">
                 </div>
                 <div class="content">
                   <p class="heading">Card Hover</p>
@@ -1224,31 +1064,12 @@
          </div>
 
          <!-- apoyamanos -->
-         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '15'">
-          <div class="col-lg-4 col-md-4 mb-3">
+         <div class="row d-flex justify-content-center" *ngIf="selectedTab === '14'">
+          <div class="cartas col-lg-4 col-md-4 mb-3">
             <div class="carta-container">
               <div class="carta">
                 <div class="front-content">
-                  <p>Hover me</p>
-                </div>
-                <div class="content">
-                  <p class="heading">Card Hover</p>
-                  <p class="texto-insumos">
-                    Lorem ipsum dolor sit amet, consectetur adipii
-                    voluptas ten mollitia pariatur odit, ab
-                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-                    necessitatibus dignissimos molestias.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <p>Hover me</p>
+                  <img src="../../../assets/productos/apoya-manos-madera.png" alt="apoya-manos-madera" class="img-fluid">
                 </div>
                 <div class="content">
                   <p class="heading">Card Hover</p>
