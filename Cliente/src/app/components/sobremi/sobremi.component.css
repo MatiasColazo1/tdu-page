@@ -66,7 +66,8 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-right: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .info {
@@ -90,6 +91,7 @@ h6 {
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
+    padding-right: 50px;
 }
 
 .border {
@@ -102,7 +104,7 @@ h6 {
 }
 
 .border:hover {
-    border: 1px solid #fff;
+    border: 1px solid #8F0408;
 }
 
 .card {
@@ -121,20 +123,20 @@ h6 {
 }
 
 .card0 {
-    background: url("../../../assets/tdu-sobremi.png") center center no-repeat;
+    background: url("../../../assets/tdu-sobremi.jpg") center center no-repeat;
     background-size: 300px;
 }
 
 .card0:hover {
-    background: url("../../../assets/tdu-sobremi.png") left center no-repeat;
-    background-size: 600px;
+    background: url("../../../assets/tdu-sobremi.jpg") left center no-repeat;
+    background-size: 400px;
 }
 
 .card0:hover h2 {
     opacity: 1;
 }
 
-.card0:hover .fa {
+.card0:hover .bx {
     opacity: 1;
 }
 
@@ -146,15 +148,28 @@ h2 {
     transition: opacity 1s;
 }
 
-.fa {
+.bx {
     opacity: 0;
     transition: opacity 1s;
+    font-size: 30px;
+}
+
+.bxl-instagram{
+    color: #ff5395;
+}
+
+.bxl-facebook{
+    color: #2ab8ff;
+}
+
+.bxl-whatsapp{
+    color: #00db4d;
 }
 
 .icons {
     position: absolute;
-    fill: #fff;
-    color: #fff;
+    fill: #8F0408;
+    color: #b41515;
     height: 130px;
     top: 226px;
     width: 50px;
