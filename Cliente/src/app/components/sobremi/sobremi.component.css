@@ -70,9 +70,7 @@ h6 {
     padding-left: 50px;
 }
 
-.info {
- 
-}
+
 
 .texto-info {
     font-family: 'Roboto Slab';
@@ -140,8 +138,8 @@ h6 {
     opacity: 1;
 }
 
-h2 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.hidden {
+    font-family: 'Rye', serif;
     color: #fff;
     margin: 20px;
     opacity: 0;
@@ -190,5 +188,8 @@ h2 {
     .info{
         margin-top: 20px;
         margin-left: 10px;
+    }
+    .container{
+        padding-right: 0;
     }
 }
