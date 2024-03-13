@@ -1,92 +1,68 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-  .banner {
-    position: relative;
-    width: 100%;
-    height: 48vh;
-    background-image: url('../../../assets/productos-tdu.jpg');
-    background-size: cover;
-    animation: zoomBackground 10s infinite alternate;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  h1 {
-    color: #fff;
-    font-family: 'Rye', serif;
-    text-transform: uppercase;
-    
-  }
-  
-  h2 {
-    color: #8F0408;
-    font-family: 'Roboto Slab';
-    font-weight: 700!important;
-   }
-  
-  .banner h1 {
-    margin: 0;
-    font-size: 50px;
-  }
-  
-  @keyframes zoomBackground {
-    0% {
-      background-size: 100%;
-    }
-  
-    100% {
-      background-size: 120%;
-    }
-  }
+.banner {
+  position: relative;
+  width: 100%;
+  height: 48vh;
+  background-image: url('../../../assets/productos-tdu.jpg');
+  background-size: cover;
+  animation: zoomBackground 10s infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
-  label {
-    position: relative;
-    margin-bottom: 5px;
-  }
-  
-  label::before {
-    content: '';
-    width: 0;
-    height: 2px;
-    background: #ac0d12;
-    display: block;
-    transition: width 0.5s;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  
-  label:hover::before {
-    width: 100%;
-  }
-
-  label:hover{
-    color: #ac0d12;
-  }
-  
-  .tab {
-    width: 130px;
-    height: 28px;
-    position: absolute;
-    z-index: 99;
-    outline: none;
-    opacity: 0;
-  }
-  
-  .tab_label {
-    cursor: pointer;
-    color: #fff;
-  }
-
-
-
-
-.categorias{
+h1 {
   color: #fff;
-  margin-bottom: 20px;
+  font-family: 'Rye', serif;
+  text-transform: uppercase;
+
+}
+
+h2 {
+  color: #8F0408;
+  font-family: 'Roboto Slab';
+  font-weight: 700 !important;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+@keyframes zoomBackground {
+  0% {
+    background-size: 100%;
+  }
+
+  100% {
+    background-size: 120%;
+  }
+}
+
+label {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+label::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #ac0d12;
+  display: block;
+  transition: width 0.5s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+label:hover::before {
+  width: 100%;
+}
+
+label:hover {
+  color: #ac0d12;
 }
 
 .tab {
@@ -101,22 +77,47 @@
 .tab_label {
   cursor: pointer;
   color: #fff;
+  font-family: 'Roboto Slab';
+  font-size: 16px;
 }
 
+.categorias {
+  color: #ac0d12;
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-family: 'Rye', serif;
+  text-transform: uppercase;
+}
 
-  
-  
-  
-  .banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-  }
-  
+.tab {
+  width: 130px;
+  height: 28px;
+  position: absolute;
+  z-index: 99;
+  outline: none;
+  opacity: 0;
+}
+
+.tab_label {
+  cursor: pointer;
+  color: #ffffff;
+
+}
+
+.row {
+  padding: 30px !important;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
 .carta-container {
   width: 300px;
   height: 300px;
@@ -124,6 +125,8 @@
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  font-family: 'Roboto Slab';
+  font-size: 16px;
 }
 
 .carta {
@@ -131,7 +134,6 @@
   height: 100%;
   border-radius: inherit;
 }
-
 
 .carta .front-content {
   width: 100%;
@@ -164,6 +166,7 @@
   0% {
     background-position: 0% 0%;
   }
+
   100% {
     background-position: 100% 0%;
   }
@@ -195,6 +198,7 @@
 .carta .content .heading {
   font-size: 32px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .carta:hover .content {
@@ -208,7 +212,6 @@
 .carta:hover .front-content p {
   opacity: 0;
 }
-  
 
 @media (max-width: 768px) {
   .carta-container {
@@ -216,8 +219,8 @@
     width: 80%;
   }
 
-  .row{
-    padding: 0 !important;
+  .row {
+    padding: 30px !important;
   }
 
   .banner h1 {
@@ -225,18 +228,14 @@
     font-size: 30px;
   }
 
-  .cartas{
+  .cartas {
     display: flex;
     justify-content: center;
     text-align: center;
   }
 }
 
-
-
-
-
-.texto{
+.texto {
   width: 100%;
   padding-left: 40px;
   padding-right: 40px;
@@ -244,14 +243,14 @@
   font-family: 'Roboto Slab';
 }
 
-
 h6 {
   margin: 0 10px 5px 0;
-  text-align: center;
   font-size: 21px;
   font-family: 'Rye', serif;
   text-transform: uppercase;
-  color: #8F0408;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: #fff;
 }
 
 .local-link {
@@ -270,18 +269,3 @@ h6 {
   /* Color oficial de Instagram */
   text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
