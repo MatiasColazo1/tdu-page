@@ -168,4 +168,8 @@
   .card-content h3{
     font-size: 20px;
   }
+
+  .card-content {
+    margin-bottom: 0;
+  }
 }
