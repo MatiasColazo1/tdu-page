@@ -85,6 +85,7 @@ label:hover {
   color: #ac0d12;
   font-size: 25px;
   margin-bottom: 10px;
+  margin-left: 20px;
   font-family: 'Rye', serif;
   text-transform: uppercase;
 }
@@ -101,7 +102,7 @@ label:hover {
 .tab_label {
   cursor: pointer;
   color: #ffffff;
-
+  margin-left: 20px;
 }
 
 
@@ -149,17 +150,6 @@ label:hover {
   object-fit: cover;
 }
 
-.carta .front-content p {
-  font-size: 32px;
-  font-weight: 700;
-  opacity: 1;
-  background: linear-gradient(-100deg, #ffd900 0%, #8F0408 70%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-}
-
 @keyframes waveAnimation {
   0% {
     background-position: 0% 0%;
@@ -182,7 +172,7 @@ label:hover {
   justify-content: center;
   text-align: center;
   gap: 10px;
-  background: linear-gradient(-100deg, #ffd900 0%, #8F0408 70%);
+  background: linear-gradient(-100deg, #360101 30%, #8F0408 70%);
   color: #e8e8e8;
   padding: 20px;
   line-height: 1.5;
