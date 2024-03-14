@@ -1,3 +1,5 @@
+<app-loader *ngIf="!componentsLoaded"></app-loader>
+<div *ngIf="componentsLoaded">
 <app-navbar></app-navbar>
 <div class="banner d-flex flex-column justify-content-center align-items-center text-center">
     <h1>Cursos & Jornadas</h1>
@@ -34,3 +36,4 @@
 <div style="height: 100px"></div>
 
 <app-footer></app-footer>
+</div>

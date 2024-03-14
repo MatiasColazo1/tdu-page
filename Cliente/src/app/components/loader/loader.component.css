@@ -1,6 +1,18 @@
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 28, 28, 0.192); /* Fondo negro transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Asegura que esté en la parte superior */
+}
+
 .loader {
   display: flex;
-  position: relative;
   justify-items: center;
   align-items: center;
   gap: 1rem;
@@ -26,6 +38,8 @@
   width: 100%;
   transform-origin: center;
   animation-delay: 2s;
+  justify-content: center;
+  align-items: center;
 }
 
 .loader .container:nth-child(3) {
@@ -205,5 +219,3 @@
     height: 12px;
   }
 }
-
-

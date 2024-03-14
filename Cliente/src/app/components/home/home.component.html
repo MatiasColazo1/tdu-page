@@ -1,3 +1,6 @@
-<app-navbar></app-navbar>
-<app-banner></app-banner>
-<app-footer></app-footer>
+<app-loader *ngIf="!componentsLoaded"></app-loader>
+<div *ngIf="componentsLoaded">
+    <app-navbar></app-navbar>
+    <app-banner></app-banner>
+    <app-footer></app-footer>
+</div>
