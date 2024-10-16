@@ -21,12 +21,15 @@
                     <i class='bx bxl-whatsapp'></i>
                 </a>
             </li>
-            <label class="burger" (click)="toggleMenu()" [ngClass]="{'menu-open': isMenuOpen}">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+            <li>
+                <label class="burger" (click)="toggleMenu()" [ngClass]="{'menu-open': isMenuOpen}">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </li>
         </ul>
+        
     </div>
 </div>
 <div class="menu-overlay" *ngIf="isMenuOpen">
