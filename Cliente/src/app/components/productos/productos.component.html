@@ -62,53 +62,40 @@
           <div>
             <label class="tab_label" for="tab7">Geles</label>
           </div>
-
           <input type="radio" name="tab" id="tab8" class="tab tab--8" [(ngModel)]="selectedTab" value="7" />
           <div>
             <label class="tab_label" for="tab8">Adhesivos para piedreria</label>
           </div>
-
           <input type="radio" name="tab" id="tab9" class="tab tab--9" [(ngModel)]="selectedTab" value="8" />
           <div>
             <label class="tab_label" for="tab9">Limas</label>
           </div>
-
           <input type="radio" name="tab" id="tab10" class="tab tab--10" [(ngModel)]="selectedTab" value="9" />
           <div>
             <label class="tab_label" for="tab10">Tips</label>
           </div>
-
           <input type="radio" name="tab" id="tab11" class="tab tab--11" [(ngModel)]="selectedTab" value="10" />
           <div>
             <label class="tab_label" for="tab11">Herramientas</label>
           </div>
-
           <input type="radio" name="tab" id="tab12" class="tab tab--12" [(ngModel)]="selectedTab" value="11" />
           <div>
             <label class="tab_label" for="tab12">Decoracion</label>
           </div>
-
           <input type="radio" name="tab" id="tab13" class="tab tab--13" [(ngModel)]="selectedTab" value="12" />
           <div>
             <label class="tab_label" for="tab13">Pinceleria</label>
           </div>
-
           <input type="radio" name="tab" id="tab14" class="tab tab--14" [(ngModel)]="selectedTab" value="13" />
           <div>
             <label class="tab_label" for="tab14">Cabinas</label>
           </div>
-
           <input type="radio" name="tab" id="tab15" class="tab tab--15" [(ngModel)]="selectedTab" value="14" />
           <div>
             <label class="tab_label" for="tab15">Apoyamanos</label>
           </div>
-
-
         </div>
       </div>
-
-
-
 
       <!-- Todos los productos -->
       <div class="col-lg-9">
@@ -183,6 +170,57 @@
             </div>
           </div>
 
+          <div class="cartas col-lg-4 col-md-4 mb-3">
+            <div class="carta-container">
+              <div class="carta">
+                <div class="front-content">
+                  <img src="../../../assets/productos/esmalte-tradicional-grande-bb.png"
+                    alt="esmalte-tradicional-grande-bb" class="img-fluid">
+                </div>
+                <div class="content">
+                  <p class="heading">Removedor decuticula</p>
+                  <p class="texto-insumos">
+                    Pinky<br> $1800
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartas col-lg-4 col-md-4 mb-3">
+            <div class="carta-container">
+              <div class="carta">
+                <div class="front-content">
+                  <img src="../../../assets/productos/removedor-cuticula-chery.jpg"
+                    alt="esmalte-tradicional-chico-bb" class="img-fluid">
+                </div>
+                <div class="content">
+                  <p class="heading">Removedor de cuticulas cherimoya</p>
+                  <p class="texto-insumos">
+                  <br> $2000
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartas col-lg-4 col-md-4 mb-3">
+            <div class="carta-container">
+              <div class="carta">
+                <div class="front-content">
+                  <img src="../../../assets/productos/quitaesmalte.jpg"
+                    alt="esmalte-tradicional-chico-bb" class="img-fluid">
+                </div>
+                <div class="content">
+                  <p class="heading">Quitaesmalte bebe 250ml</p>
+                  <p class="texto-insumos">
+                    <br> $3000
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <!-- Esmalte semipermanente -->
           <div class="row d-flex justify-content-center" *ngIf="selectedTab === '2'">
             <div class="cartas col-lg-4 col-md-4 mb-3">
@@ -234,40 +272,40 @@
                 </div>
               </div>
             </div>
-              <div class="cartas col-lg-4 col-md-4 mb-3">
-                <div class="carta-container">
-                  <div class="carta">
-                    <div class="front-content">
-                      <img src="../../../assets/productos/top-coat-charm-limit.jpg" alt="Descripción de la imagen"
-                        class="img-fluid">
-                    </div>
-                    <div class="content">
-                      <p class="heading">Top coat Charm Limit</p>
-                      <p class="texto-insumos">
-                        Top coat Charm Limit <br> $3000
-                      </p>
-                    </div>
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/top-coat-charm-limit.jpg" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Top coat Charm Limit</p>
+                    <p class="texto-insumos">
+                      Top coat Charm Limit <br> $3000
+                    </p>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="cartas col-lg-4 col-md-4 mb-3">
-                <div class="carta-container">
-                  <div class="carta">
-                    <div class="front-content">
-                      <img src="../../../assets/productos/semi-esmalte-charm-limit.jpg" alt="Descripción de la imagen"
-                        class="img-fluid">
-                    </div>
-                    <div class="content">
-                      <p class="heading">Mini corazón</p>
-                      <p class="texto-insumos">
-                        Color surtido (charm limit) <br> $2000
-                      </p>
-                    </div>
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/semi-esmalte-charm-limit.jpg" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Mini corazón</p>
+                    <p class="texto-insumos">
+                      Color surtido (charm limit) <br> $2000
+                    </p>
                   </div>
                 </div>
               </div>
-           
+            </div>
+
 
             <div class="cartas col-lg-4 col-md-4 mb-3">
               <div class="carta-container">
@@ -601,7 +639,7 @@
                   <div class="content">
                     <p class="heading">Limas sponge</p>
                     <p class="texto-insumos">
-                     <br> $600
+                      <br> $600
                     </p>
                   </div>
                 </div>
@@ -634,7 +672,7 @@
                   <div class="content">
                     <p class="heading">Lima de vidrio</p>
                     <p class="texto-insumos">
-                     <br> Agotado
+                      <br> Agotado
                     </p>
                   </div>
                 </div>
@@ -731,8 +769,7 @@
               <div class="carta-container">
                 <div class="carta">
                   <div class="front-content">
-                    <img src="../../../assets/productos/capsulas-dual.jpg" alt="muestrario-natural"
-                      class="img-fluid">
+                    <img src="../../../assets/productos/capsulas-dual.jpg" alt="muestrario-natural" class="img-fluid">
                   </div>
                   <div class="content">
                     <p class="heading">Capsulas dual cuadradas</p>
@@ -748,8 +785,7 @@
               <div class="carta-container">
                 <div class="carta">
                   <div class="front-content">
-                    <img src="../../../assets/productos/tips-extension.jpg" alt="muestrario-natural"
-                      class="img-fluid">
+                    <img src="../../../assets/productos/tips-extension.jpg" alt="muestrario-natural" class="img-fluid">
                   </div>
                   <div class="content">
                     <p class="heading">Tips de extension</p>
@@ -825,7 +861,7 @@
                   <div class="content">
                     <p class="heading">Empujador de cuticulas</p>
                     <p class="texto-insumos">
-                     <br> $1500
+                      <br> $1500
                     </p>
                   </div>
                 </div>
@@ -842,7 +878,7 @@
                   <div class="content">
                     <p class="heading">Punta obelisco</p>
                     <p class="texto-insumos">
-                     <br> $700 c/u
+                      <br> $700 c/u
                     </p>
                   </div>
                 </div>
@@ -877,7 +913,7 @@
                   <div class="content">
                     <p class="heading">Cristales plateados</p>
                     <p class="texto-insumos">
-                      
+
                     </p>
                   </div>
                 </div>
@@ -910,7 +946,7 @@
                   <div class="content">
                     <p class="heading">Papel foil</p>
                     <p class="texto-insumos">
-                     
+
                     </p>
                   </div>
                 </div>
@@ -943,7 +979,7 @@
                   <div class="content">
                     <p class="heading">Papel oro</p>
                     <p class="texto-insumos">
-                
+
                     </p>
                   </div>
                 </div>
@@ -960,7 +996,7 @@
                   <div class="content">
                     <p class="heading">Papel plata</p>
                     <p class="texto-insumos">
-                    
+
                     </p>
                   </div>
                 </div>
@@ -980,7 +1016,7 @@
                   <div class="content">
                     <p class="heading">Cepillo para uñas</p>
                     <p class="texto-insumos">
-                    <br> $500
+                      <br> $500
                     </p>
                   </div>
                 </div>
@@ -1049,7 +1085,7 @@
                   <div class="content">
                     <p class="heading">Cabina flor</p>
                     <p class="texto-insumos">
-                  <br> Agotado
+                      <br> Agotado
                     </p>
                   </div>
                 </div>
