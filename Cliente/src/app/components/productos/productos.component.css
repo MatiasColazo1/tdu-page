@@ -30,6 +30,42 @@ h2 {
   font-size: 50px;
 }
 
+/* Cambia el color o animación del label seleccionado */
+input[type="radio"]:checked + div > .tab_label {
+  color: #ac0d12; /* Color activo */
+  font-weight: bold; /* O cualquier estilo que desees */
+}
+
+input[type="radio"]:checked + div > .tab_label::before {
+  width: 100%; /* Mantén la animación activa */
+}
+
+label {
+  position: relative;
+  margin-bottom: 5px;
+  transition: color 0.5s ease; /* Transición suave */
+}
+
+label::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #ac0d12;
+  display: block;
+  transition: width 0.5s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+label:hover {
+  color: #ac0d12;
+}
+
+label:hover::before {
+  width: 100%;
+}
+
 @keyframes zoomBackground {
   0% {
     background-size: 100%;
