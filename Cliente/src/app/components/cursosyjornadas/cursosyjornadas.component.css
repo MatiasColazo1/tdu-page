@@ -129,27 +129,102 @@
     background-color: #730205;
   }
 
-  .card-content {
+/* Medias queries específicas para móviles */
+@media (max-width: 768px) {
+    .custom-card-size {
+        max-width: 100%;
+    }
+
+    .card-content h3 {
+        font-size: 1.5em;
+    }
+
+    .card-content p {
+        font-size: 1em;
+    }
+
+    .card::after {
+        top: 10px;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+    }
+}
+.card-content {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado vertical y horizontal */
     text-align: center;
     z-index: 3;
     color: #fff;
-    margin-bottom: 100px;
+    padding: 0 10px; /* Espaciado lateral para pantallas pequeñas */
 }
 
 .card-content h3 {
     margin: 0;
-    font-size: 42px;
+    font-size: 2em; /* Escalable */
     font-family: 'Rye', serif;
 }
 
 .card-content p {
     margin: 10px 0;
-    font-size: 24px;
-    font-family: 'Roboto';
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.5s ease, visibility 0.5s; /* Transición suave */
+    transition: opacity 0.5s ease, visibility 0.5s;
+    word-break: break-word; /* Rompe texto largo */
+}
+
+/* Mostrar texto al hacer hover */
+.card:hover .card-content p {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Medias queries específicas para móviles */
+@media (max-width: 768px) {
+    .custom-card-size {
+        max-width: 100%;
+    }
+
+    .card-content h3 {
+        font-size: 1.5em;
+    }
+
+    .card-content p {
+        font-size: 1em;
+    }
+
+    .card::after {
+        top: 10px;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+    }
+}
+
+/* Medias queries específicas para móviles */
+@media (max-width: 768px) {
+    .custom-card-size {
+        max-width: 100%;
+    }
+
+    .card-content h3 {
+        font-size: 1.5em;
+    }
+
+    .card-content p {
+        font-size: 1em;
+    }
+
+    .card::after {
+        top: 10px;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+    }
 }
 
 /* Cuando se hace hover sobre la tarjeta, el párrafo se vuelve visible */
@@ -157,7 +232,6 @@
   visibility: visible;
   opacity: 1;
 }
-
 
 
 @media (max-width: 992px) { /* Pantallas mayores a 992px (md en Bootstrap) */
