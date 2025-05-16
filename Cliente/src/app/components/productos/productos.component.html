@@ -1,979 +1,1224 @@
 <app-loader *ngIf="!componentsLoaded"></app-loader>
 <div *ngIf="componentsLoaded">
-<app-navbar></app-navbar>
-<div class="banner d-flex flex-column justify-content-center align-items-center text-center">
-  <h1>Distribuidora TDU</h1>
-  <h2>Insumos</h2>
-</div>
+  <app-navbar></app-navbar>
+  <div class="banner d-flex flex-column justify-content-center align-items-center text-center">
+    <h1>Distribuidora TDU</h1>
+    <h2>Insumos</h2>
+  </div>
 
-<div style="height: 100px"></div>
+  <div style="height: 100px"></div>
 
-<h6>Informacion de nuestos productos</h6>
-<div class="texto">
-  <p>
-    Somos tu destino confiable para productos de uñas de uso profesional. En Tienda De Uñas Distribuidora,
-    nos enorgullecemos de ofrecer una amplia gama de productos de la más alta calidad,
-    perfectos para satisfacer las necesidades de los profesionales del cuidado de uñas y contamos
-    con el mejor asesoramiento.
-  </p>
-  <p>
-    Para encargar, puedes pasar por el <a
-      href="https://www.google.com/maps/place/Tienda+de+U%C3%B1as+%7C+Sal%C3%B3n%2F+Escuela+y+Rock%26roll/@-32.9596515,-60.6502414,21z/data=!4m15!1m8!3m7!1s0x95b7ab0cdd5e702b:0xbe70d691f639ff72!2sEspa%C3%B1a+2022,+S2000+Rosario,+Santa+Fe!3b1!8m2!3d-32.9595713!4d-60.650295!16s%2Fg%2F11k5bmycld!3m5!1s0x95b7ab13aba71c91:0xddf20553214be84!8m2!3d-32.95956!4d-60.6503982!16s%2Fg%2F11c6vb3kqx?entry=ttu"
-      class="local-link" target="_blank"><b>local</b></a>,
-    o a través de <a href="https://wa.me/3412525386" class="whatsapp-link" target="_blank"><b>WhatsApp</b></a>.
-    Para conocer más noticias sobre los productos, puedes seguirme en <a href="https://www.instagram.com/tdu_valesosa/"
-      class="instagram-link" target="_blank"><b>Instagram</b></a>.
-  </p>
-</div>
-<div style="height: 50px"></div>
-<div class="container-fluid">
-  <div class="row">
-    <!-- Menú -->
-    <div class="col-lg-3 productos">
-      <div class="d-flex flex-column">
-        <h5 class="categorias">Categorias</h5>
+  <h6>Informacion de nuestos productos</h6>
+  <div class="texto">
+    <p>
+      Somos tu destino confiable para productos de uñas de uso profesional. En Tienda De Uñas Distribuidora,
+      nos enorgullecemos de ofrecer una amplia gama de productos de la más alta calidad,
+      perfectos para satisfacer las necesidades de los profesionales del cuidado de uñas y contamos
+      con el mejor asesoramiento.
+    </p>
+    <p>
+      Para encargar, puedes pasar por el <a
+        href="https://www.google.com/maps/place/Tienda+de+U%C3%B1as+%7C+Sal%C3%B3n%2F+Escuela+y+Rock%26roll/@-32.9596515,-60.6502414,21z/data=!4m15!1m8!3m7!1s0x95b7ab0cdd5e702b:0xbe70d691f639ff72!2sEspa%C3%B1a+2022,+S2000+Rosario,+Santa+Fe!3b1!8m2!3d-32.9595713!4d-60.650295!16s%2Fg%2F11k5bmycld!3m5!1s0x95b7ab13aba71c91:0xddf20553214be84!8m2!3d-32.95956!4d-60.6503982!16s%2Fg%2F11c6vb3kqx?entry=ttu"
+        class="local-link" target="_blank"><b>local</b></a>,
+      o a través de <a href="https://wa.me/3413607227" class="whatsapp-link" target="_blank"><b>WhatsApp</b></a>.
+      Para conocer más noticias sobre los productos, puedes seguirme en <a
+        href="https://www.instagram.com/tdu_valesosa/" class="instagram-link" target="_blank"><b>Instagram</b></a>.
+    </p>
+  </div>
+  <div style="height: 50px"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Menú -->
+      <div class="col-lg-3 productos">
+        <div class="d-flex flex-column">
+          <h5 class="categorias">Categorias</h5>
 
-        <input type="radio" name="tab" id="tab2" class="tab tab--2" [(ngModel)]="selectedTab" value="1" />
-        <div>
-          <label class="tab_label" for="tab2">Esmaltes tradicional</label>
-        </div>
+          <input type="radio" name="tab" id="tab2" class="tab tab--2" [(ngModel)]="selectedTab" value="1" />
+          <div>
+            <label class="tab_label" for="tab2">Esmaltes tradicional</label>
+          </div>
 
-        <input type="radio" name="tab" id="tab3" class="tab tab--3" [(ngModel)]="selectedTab" value="2" />
-        <div>
-          <label class="tab_label" for="tab3">Esmaltes semipermanente</label>
-        </div>
+          <input type="radio" name="tab" id="tab3" class="tab tab--3" [(ngModel)]="selectedTab" value="2" />
+          <div>
+            <label class="tab_label" for="tab3">Esmaltes semipermanente</label>
+          </div>
 
-        <input type="radio" name="tab" id="tab4" class="tab tab--4" [(ngModel)]="selectedTab" value="3" />
-        <div>
-          <label class="tab_label" for="tab4">Preparadores y adherentes</label>
-        </div>
+          <input type="radio" name="tab" id="tab4" class="tab tab--4" [(ngModel)]="selectedTab" value="3" />
+          <div>
+            <label class="tab_label" for="tab4">Preparadores y adherentes</label>
+          </div>
 
-        <input type="radio" name="tab" id="tab5" class="tab tab--5" [(ngModel)]="selectedTab" value="4" />
-        <div>
-          <label class="tab_label" for="tab5">Polimeros</label>
-        </div>
+          <input type="radio" name="tab" id="tab5" class="tab tab--5" [(ngModel)]="selectedTab" value="4" />
+          <div>
+            <label class="tab_label" for="tab5">Polimeros</label>
+          </div>
 
-        <input type="radio" name="tab" id="tab6" class="tab tab--6" [(ngModel)]="selectedTab" value="5" />
-        <div>
-          <label class="tab_label" for="tab6">Monomeros</label>
-        </div>
+          <input type="radio" name="tab" id="tab6" class="tab tab--6" [(ngModel)]="selectedTab" value="5" />
+          <div>
+            <label class="tab_label" for="tab6">Monomeros</label>
+          </div>
 
-        <input type="radio" name="tab" id="tab7" class="tab tab--7" [(ngModel)]="selectedTab" value="6" />
-        <div>
-          <label class="tab_label" for="tab7">Geles</label>
-        </div>
-
-        <input type="radio" name="tab" id="tab8" class="tab tab--8" [(ngModel)]="selectedTab" value="7" />
-        <div>
-          <label class="tab_label" for="tab8">Adhesivos para piedreria</label>
-        </div>
-
-        <input type="radio" name="tab" id="tab9" class="tab tab--9" [(ngModel)]="selectedTab" value="8" />
-        <div>
-          <label class="tab_label" for="tab9">Limas</label>
-        </div>
-
-        <input type="radio" name="tab" id="tab10" class="tab tab--10" [(ngModel)]="selectedTab" value="9" />
-        <div>
-          <label class="tab_label" for="tab10">Tips</label>
-        </div>
-
-        <input type="radio" name="tab" id="tab11" class="tab tab--11" [(ngModel)]="selectedTab" value="10" />
-        <div>
-          <label class="tab_label" for="tab11">Herramientas</label>
-        </div>
-
-        <input type="radio" name="tab" id="tab12" class="tab tab--12" [(ngModel)]="selectedTab" value="11" />
-        <div>
-          <label class="tab_label" for="tab12">Decoracion</label>
-        </div>
-
-        <input type="radio" name="tab" id="tab13" class="tab tab--13" [(ngModel)]="selectedTab" value="12" />
-        <div>
-          <label class="tab_label" for="tab13">Pinceleria</label>
-        </div>
-
-        <input type="radio" name="tab" id="tab14" class="tab tab--14" [(ngModel)]="selectedTab" value="13" />
-        <div>
-          <label class="tab_label" for="tab14">Cabinas</label>
-        </div>
-
-        <input type="radio" name="tab" id="tab15" class="tab tab--15" [(ngModel)]="selectedTab" value="14" />
-        <div>
-          <label class="tab_label" for="tab15">Apoyamanos</label>
+          <input type="radio" name="tab" id="tab7" class="tab tab--7" [(ngModel)]="selectedTab" value="6" />
+          <div>
+            <label class="tab_label" for="tab7">Geles</label>
+          </div>
+          <input type="radio" name="tab" id="tab8" class="tab tab--8" [(ngModel)]="selectedTab" value="7" />
+          <div>
+            <label class="tab_label" for="tab8">Adhesivos para piedreria</label>
+          </div>
+          <input type="radio" name="tab" id="tab9" class="tab tab--9" [(ngModel)]="selectedTab" value="8" />
+          <div>
+            <label class="tab_label" for="tab9">Limas</label>
+          </div>
+          <input type="radio" name="tab" id="tab10" class="tab tab--10" [(ngModel)]="selectedTab" value="9" />
+          <div>
+            <label class="tab_label" for="tab10">Tips</label>
+          </div>
+          <input type="radio" name="tab" id="tab11" class="tab tab--11" [(ngModel)]="selectedTab" value="10" />
+          <div>
+            <label class="tab_label" for="tab11">Herramientas</label>
+          </div>
+          <input type="radio" name="tab" id="tab12" class="tab tab--12" [(ngModel)]="selectedTab" value="11" />
+          <div>
+            <label class="tab_label" for="tab12">Decoracion</label>
+          </div>
+          <input type="radio" name="tab" id="tab13" class="tab tab--13" [(ngModel)]="selectedTab" value="12" />
+          <div>
+            <label class="tab_label" for="tab13">Pinceleria</label>
+          </div>
+          <input type="radio" name="tab" id="tab14" class="tab tab--14" [(ngModel)]="selectedTab" value="13" />
+          <div>
+            <label class="tab_label" for="tab14">Cabinas</label>
+          </div>
+          <input type="radio" name="tab" id="tab15" class="tab tab--15" [(ngModel)]="selectedTab" value="14" />
+          <div>
+            <label class="tab_label" for="tab15">Apoyamanos</label>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Todos los productos -->
-    <div class="col-lg-9">
-      <div class="row">
-        <!-- Esmalte tradicional -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '1'">
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/top-coat-cherimoya.png" alt="top-coat-cherimoya"
-                    class="img-fluid">
+      <!-- Todos los productos -->
+      <div class="col-lg-9">
+        <div class="row">
+          <!-- Esmalte tradicional -->
+          <div class="row d-flex justify-content-center" *ngIf="selectedTab === '1'">
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/top-coat-cherimoya.png" alt="top-coat-cherimoya"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Top coat</p>
+                    <p class="texto-insumos">
+                      Esmalte tradicional(cherimoya) <br> $3000
+                    </p>
+                  </div>
                 </div>
-                <div class="content">
-                  <p class="heading">Top coat</p>
-                  <p class="texto-insumos">
-                    Top coat esmalte tradicional(cherimoya): $1800
-                  </p>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/fortalecedor-uñas-cherimoya.png"
+                      alt="fortalecedor-uñas-cherimoya" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Fortalecedor de uñas</p>
+                    <p class="texto-insumos">
+                      Cherimoya <br> $3000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/esmalte-tradicional-chico-bb.png"
+                      alt="esmalte-tradicional-chico-bb" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Esmalte tradicional chico</p>
+                    <p class="texto-insumos">
+                      Variedad de colores (marca bebe) <br> $1500
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/esmalte-tradicional-grande-bb.png"
+                      alt="esmalte-tradicional-grande-bb" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Esmalte tradicional grande</p>
+                    <p class="texto-insumos">
+                      Variedades de colores(marca bebe) <br> $1800
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/removedor-cuticula1800.jpg" alt="esmalte-tradicional-grande-bb"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Removedor de cuticula</p>
+                    <p class="texto-insumos">
+                      Pinky<br> $1800
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/removedor-cuticula-chery2000.jpg"
+                      alt="esmalte-tradicional-chico-bb" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Removedor de cuticulas cherimoya</p>
+                    <p class="texto-insumos">
+                      <br> $2000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/quitaesmalte3900.jpg" alt="esmalte-tradicional-chico-bb"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Quitaesmalte bebe 250ml</p>
+                    <p class="texto-insumos">
+                      <br> $3900
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/esmalte-tradicional-chico-bb.png"
-                    alt="esmalte-tradicional-chico-bb" class="img-fluid">
+          <!-- Esmalte semipermanente -->
+          <div class="row d-flex justify-content-center" *ngIf="selectedTab === '2'">
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/top-coat-semi.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Top coat 15ml</p>
+                    <p class="texto-insumos">
+                      Cherimoya <br> $7500
+                    </p>
+                  </div>
                 </div>
-                <div class="content">
-                  <p class="heading">Esmalte tradicional chico</p>
-                  <p class="texto-insumos">
-                    Esmalte tradicional chico variedad de colores(marca bebe): $800
-                  </p>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/top-coat-mate.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Top coat mate 15ml</p>
+                    <p class="texto-insumos">
+                      Cherimoya <br> $7500
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/base-coat.png" alt="Descripción de la imagen" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Base coat 15ml</p>
+                    <p class="texto-insumos">
+                      Cherimoya<br> $7500
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/top-coat-charm-limit.jpg" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Top coat Charm Limit</p>
+                    <p class="texto-insumos">
+                      Top coat Charm Limit <br> $3000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/semi-esmalte-charm-limit.jpg" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Mini corazón</p>
+                    <p class="texto-insumos">
+                      Color surtido (charm limit) <br> $2000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/semi-variedad.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Esmaltes 8ml</p>
+                    <p class="texto-insumos">
+                      Semipermanente variedad de colores(cherimoya) <br> $5000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/base-capping.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Base capping 15ml</p>
+                    <p class="texto-insumos">
+                      Base capping 15ml(cherimoya) <br> $9900
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/esmalte-semi-variedad.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Esmaltes 10ml</p>
+                    <p class="texto-insumos">
+                      Semipermanente variedad de colores 10ml(charm limit) <br> $2000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/semi-reflectivo.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Esmaltes reflectivo 10ml</p>
+                    <p class="texto-insumos">
+                      Variedad de colores (charm limit) <br> Agotado
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/base-ruber.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Base ruber 10ml </p>
+                    <p class="texto-insumos">
+                      Variedad de tonos (charm limit) <br> Agotado
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/base-coat-top-coart-mate.jpg" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Base y top coat - top mate  </p>
+                    <p class="texto-insumos">
+                      Base coat y top coat $6000 <br> Top mate $5500
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/esmalte-tradicional-grande-bb.png"
-                    alt="esmalte-tradicional-grande-bb" class="img-fluid">
+          <!-- Preparadores y adherentes -->
+          <div class="row d-flex justify-content-center" *ngIf="selectedTab === '3'">
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/primer-sin-accido.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Primer sin accido</p>
+                    <p class="texto-insumos">
+                      Cherimoya <br> $7500
+                    </p>
+                  </div>
                 </div>
-                <div class="content">
-                  <p class="heading">Esmalte tradicional grande</p>
-                  <p class="texto-insumos">
-                    Esmalte tradicional grande con variedades de colores(marca bebe): $1200
-                  </p>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/primer-con-accido.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Primer con accido </p>
+                    <p class="texto-insumos">
+                      Cherimoya <br> $7500
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/nivelador-ph.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Nivelador de ph</p>
+                    <p class="texto-insumos">
+                      Cherimoya <br> $7500
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/bonder.png" alt="Descripción de la imagen" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Bonder ultrabond 15ml</p>
+                    <p class="texto-insumos">
+                      Cherimoya <br> $7500
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/adhere.png" alt="Descripción de la imagen" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Adhere</p>
+                    <p class="texto-insumos">
+                      Cherimoya <br> $7500
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- Polimeros -->
+          <div class="row d-flex justify-content-center" *ngIf="selectedTab === '4'">
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/polimero-clear-cherimoya.png" alt="polimero-clear-cherimoya"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Polimero clear</p>
+                    <p class="texto-insumos">
+                      Cherimoya <br> Agotado
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/polimero-cover-cherimoya.png" alt="polimero-cover-cherimoya"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Polimero cover</p>
+                    <p class="texto-insumos">
+                      Variedad de tonos (cherimoya) <br> $10000
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/fortalecedor-uñas-cherimoya.png" alt="fortalecedor-uñas-cherimoya"
-                    class="img-fluid">
+          <!-- Monomeros -->
+          <div class="row d-flex justify-content-center" *ngIf="selectedTab === '5'">
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/monomero.png" alt="Descripción de la imagen" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Monomero 100ml</p>
+                    <p class="texto-insumos">
+                      Envase vidrio (cherimoya) <br> $12500
+                    </p>
+                  </div>
                 </div>
-                <div class="content">
-                  <p class="heading">Fortalecedor de uñas</p>
-                  <p class="texto-insumos">
-                    Fortalecedor de uñas(cherimoya): $1800
-                  </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Geles -->
+          <div class="row d-flex justify-content-center" *ngIf="selectedTab === '6'">
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/gel-solido.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Gel solido</p>
+                    <p class="texto-insumos">
+                      <br> Agotado
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Adhesivos para piedreria -->
+          <div class="row d-flex justify-content-center" *ngIf="selectedTab === '7'">
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/pegamento-strass-curado-uv-led.png"
+                      alt="pegamento-strass-curado-uv-led" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Pegamento strass</p>
+                    <p class="texto-insumos">
+                      Adhesivo para piedreria curado uv/led<br> Agotado
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/adhesivo-con-pincel.png" alt="adhesivo-con-pincel"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Adhesivo para tips</p>
+                    <p class="texto-insumos">
+                      Con pincel <br> $1500
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/tips-glue-cherimoya.jpg" alt="adhesivo-tips-nail-glue"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Adhesivo Tips</p>
+                    <p class="texto-insumos">
+                      Nail glue Cherimoya<br> $2200
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/tips-glue-cherimoya-uv-led.jpg" alt="adhesivo-tips-uv-led"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Adhesivo Nail gel </p>
+                    <p class="texto-insumos">
+                      12ml Cherimoya uv/led<br> $4500
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- limas -->
+          <div class="row d-flex justify-content-center" *ngIf="selectedTab === '8'">
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/lima-sponge.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Limas sponge</p>
+                    <p class="texto-insumos">
+                      <br> $600
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/lima-100.png" alt="Descripción de la imagen" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Lima 100/180</p>
+                    <p class="texto-insumos">
+                      Cherimoya<br> Agotado
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/lima-vidrio.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Lima de vidrio</p>
+                    <p class="texto-insumos">
+                      <br> Agotado
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/lima-240.png" alt="Descripción de la imagen" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Lima 240</p>
+                    <p class="texto-insumos">
+                      Cherimoya <br> Agotado
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/limas-pinky.jpg" alt="limas-pinky" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Limas Pinky</p>
+                    <p class="texto-insumos">
+                      240/320 y 100/180 <br> $800
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- tips -->
+          <div class="row d-flex justify-content-center" *ngIf="selectedTab === '9'">
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/tips-soft-gel-coffin.png" alt="tips-soft-gel-coffin"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Tips soft gel coffin </p>
+                    <p class="texto-insumos">
+                      Variedad de puntas (Charm Limit) <br> Agotado
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/press-one-marca-new-quality.png"
+                      alt="press-one-marca-new-quality" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Press one</p>
+                    <p class="texto-insumos">
+                      Variedad (New quality) <br> $2500
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/muestrario-natural.png" alt="muestrario-natural"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Muestrario</p>
+                    <p class="texto-insumos">
+                      Natural <br> $2500
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/capsulas-dual.jpg" alt="muestrario-natural" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Capsulas dual cuadradas</p>
+                    <p class="texto-insumos">
+                      Charm Limit cuadradas <br> $6000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/tips-extension.jpg" alt="muestrario-natural" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Tips de extension</p>
+                    <p class="texto-insumos">
+                      <br> $3800
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Herramientas -->
+          <div class="row d-flex justify-content-center" *ngIf="selectedTab === '10'">
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/corta-cuticula.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Corta cuticulas</p>
+                    <p class="texto-insumos">
+                      Cherimoya <br> $6000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/alicate-corta-uñas.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Alicate corta uñas</p>
+                    <p class="texto-insumos">
+                      Cherimoya <br> $7500
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/tijerita-corta-uñas.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Tijerita corta uñas</p>
+                    <p class="texto-insumos">
+                      <br> $1500
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/empujador-cuticulas.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Empujador de cuticulas</p>
+                    <p class="texto-insumos">
+                      <br> $1500
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/punta-obelisco.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Punta obelisco</p>
+                    <p class="texto-insumos">
+                      <br> $700 c/u
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/levanta-strass.jpg" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Levanta Strass</p>
+                    <p class="texto-insumos">
+                      <br> $4000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/capuchones.jpg" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Capuchones</p>
+                    <p class="texto-insumos">
+                      Para remover Semipermanentes  <br> $2500
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Decoracion -->
+          <div class="row d-flex justify-content-center" *ngIf="selectedTab === '11'">
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/stickers.png" alt="Descripción de la imagen" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Stickers</p>
+                    <p class="texto-insumos">
+                      Variedad de diseños
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/cristales.png" alt="Descripción de la imagen" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Cristales plateados</p>
+                    <p class="texto-insumos">
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/fimos.png" alt="Descripción de la imagen" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Fimos</p>
+                    <p class="texto-insumos">
+                      Variedad de formas
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/papel-foil.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Papel foil</p>
+                    <p class="texto-insumos">
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/forma-plana.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Forma planas</p>
+                    <p class="texto-insumos">
+                      Variedad de diseños
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/papel-oro.png" alt="Descripción de la imagen" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Papel oro</p>
+                    <p class="texto-insumos">
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/papel-plata.png" alt="Descripción de la imagen"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Papel plata</p>
+                    <p class="texto-insumos">
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pinceleria -->
+          <div class="row d-flex justify-content-center" *ngIf="selectedTab === '12'">
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/cepillo.png" alt="cepillo-para-uñas" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Cepillo para uñas</p>
+                    <p class="texto-insumos">
+                      <br> $500
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/brochas-chica.png" alt="brochas-chica" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Brochas chicas</p>
+                    <p class="texto-insumos">
+                      <br> Agotado
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/pincel-linner-cherimoya.png" alt="pincel-linner-cherimoya"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Pincel linner</p>
+                    <p class="texto-insumos">
+                      Cherimoya <br> $1900
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/pincel-espatula-polygel.png" alt="pincel-espatula-polygel"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Pincel con espatula</p>
+                    <p class="texto-insumos">
+                      Para polygel <br> Agotado
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cabinas -->
+          <div class="row d-flex justify-content-center" *ngIf="selectedTab === '13'">
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/cabina-flor.png" alt="cabina-flor" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Cabina flor</p>
+                    <p class="texto-insumos">
+                      <br> Agotado
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/cabina-uv-led.png" alt="cabina-uv/led" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Cabina uv/led 48w</p>
+                    <p class="texto-insumos">
+                      <br> Agotada
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/cabina-de-mano.jpg" alt="cabina-uv/led" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Cabina Portatil 18w</p>
+                    <p class="texto-insumos">
+                      Recargable 18w <br> $12000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/cabina-sun.jpg" alt="cabina-uv/led" class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Cabina Sun </p>
+                    <p class="texto-insumos">
+                      UV/Led 48 wats <br> $60.000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- apoyamanos -->
+          <div class="row d-flex justify-content-center" *ngIf="selectedTab === '14'">
+            <div class="cartas col-lg-4 col-md-4 mb-3">
+              <div class="carta-container">
+                <div class="carta">
+                  <div class="front-content">
+                    <img src="../../../assets/productos/apoya-manos-madera.png" alt="apoya-manos-madera"
+                      class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <p class="heading">Apoya manos de madera</p>
+                    <p class="texto-insumos">
+                      Variedad de colores y tamaños<br> $8500
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Esmalte semipermanente -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '2'">
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/top-coat-semi.png" alt="Descripción de la imagen"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Top coat 15ml</p>
-                  <p class="texto-insumos">
-                    Esmalte semipermanente: top coat 15ml(cherimoya): $6500
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/top-coat-mate.png" alt="Descripción de la imagen"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Top coat mate 15ml</p>
-                  <p class="texto-insumos">
-                    Esmalte semipermanente: top coat mate 15ml(cherimoya): $6500
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/base-coat.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Base coat 15ml</p>
-                  <p class="texto-insumos">
-                    Esmalte semipermanente: base coat 15ml(cherimoya): $6500
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/semi-variedad.png" alt="Descripción de la imagen"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Esmaltes 8ml</p>
-                  <p class="texto-insumos">
-                    Esmalte semipermanente 8ml variedad de colores(cherimoya): $4000
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/base-capping.png" alt="Descripción de la imagen"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Base capping 15ml</p>
-                  <p class="texto-insumos">
-                     Base capping 15ml(cherimoya): $7500
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/esmalte-semi-variedad.png" alt="Descripción de la imagen"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Esmaltes 10ml</p>
-                  <p class="texto-insumos">
-                    Esmalte semipermanente: variedad de colores 10ml(charm limit): $1700.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/semi-reflectivo.png" alt="Descripción de la imagen"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Esmaltes reflectivo 10ml</p>
-                  <p class="texto-insumos">
-                    Esmalte semipermanente reflectivo, variedad de colores 10ml(charm limit): $2000
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/base-ruber.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Base ruber 10ml </p>
-                  <p class="texto-insumos">
-                    Base ruber variedad de tonos 10ml(charm limit): $2500
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Preparadores y adherentes -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '3'">
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/primer-sin-accido.png" alt="Descripción de la imagen"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Primer sin accido</p>
-                  <p class="texto-insumos">
-                    Primer sin accido(cherimoya): $3400
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/primer-con-accido.png" alt="Descripción de la imagen"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Primer con accido </p>
-                  <p class="texto-insumos">
-                    Primer con accido(cherimoya): $3400
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/nivelador-ph.png" alt="Descripción de la imagen"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Nivelador de ph</p>
-                  <p class="texto-insumos">
-                    Nivelador de ph(cherimoya): $6500
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/bonder.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Bonder ultrabond 15ml</p>
-                  <p class="texto-insumos">
-                    Bonder ultrabond 15ml(cherimoya): $6500
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/adhere.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Adhere</p>
-                  <p class="texto-insumos">
-                    Adhere(cherimoya): $1800
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-
-        <!-- Polimeros -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '4'">
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/polimero-clear-cherimoya.png" alt="polimero-clear-cherimoya"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Polimero clear</p>
-                  <p class="texto-insumos">
-                    Polimero clear(cherimoya): $8500
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/polimero-cover-cherimoya.png" alt="polimero-cover-cherimoya"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Polimero cover</p>
-                  <p class="texto-insumos">
-                    Polimeros cover variedad de tonos(cherimoya): $8500
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Monomeros -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '5'">
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/monomero.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Monomero 100ml</p>
-                  <p class="texto-insumos">
-                    Monomero envase vidrio 100ml(cherimoya): $11000
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Geles -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '6'">
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/gel-solido.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Gel solido</p>
-                  <p class="texto-insumos">
-                    Gel solido: $4500
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Adhesivos para piedreria -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '7'">
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/pegamento-strass-curado-uv-led.png"
-                    alt="pegamento-strass-curado-uv-led" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Pegamento strass curado uv/led</p>
-                  <p class="texto-insumos">
-                    Adhesivo para piedreria, pegamento strass curado uv/led: $5000
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/adhesivo-con-pincel.png" alt="adhesivo-con-pincel"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Adhesivo con pincel</p>
-                  <p class="texto-insumos">
-                    Adhesivo para piedreria, adhesivo con pincel: $1300
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- limas -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '8'">
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/lima-sponge.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Limas sponge</p>
-                  <p class="texto-insumos">
-                    Limas sponge: $700
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/lima-100.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Lima 100/180</p>
-                  <p class="texto-insumos">
-                    Lima 100/180(cherimoya): $900
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/lima-vidrio.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Lima de vidrio</p>
-                  <p class="texto-insumos">
-                    Lima de vidrio: $900
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/lima-240.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Lima 240</p>
-                  <p class="texto-insumos">
-                    Lima 240(cherimoya): $900
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- tips -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '9'">
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/tips-soft-gel-coffin.png" alt="tips-soft-gel-coffin"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Tips soft gel coffin </p>
-                  <p class="texto-insumos">
-                    Tips soft gel coffin variedad de puntas(charm limit): $3200
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/press-one-marca-new-quality.png" alt="press-one-marca-new-quality"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Press one</p>
-                  <p class="texto-insumos">
-                    Press one variedad(new quality): $2000
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/muestrario-natural.png" alt="muestrario-natural"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">muestrario</p>
-                  <p class="texto-insumos">
-                    Muestrario natural: $1800
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Herramientas -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '10'">
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/corta-cuticula.png" alt="Descripción de la imagen"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">corta cuticulas</p>
-                  <p class="texto-insumos">
-                    Corta cuticulas(cherimoya): $5000
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/alicate-corta-uñas.png" alt="Descripción de la imagen"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">alicate corta uñas</p>
-                  <p class="texto-insumos">
-                    Alicate corta uñas(cherimoya): $5500
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/tijerita-corta-uñas.png" alt="Descripción de la imagen"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">tijerita corta uñas</p>
-                  <p class="texto-insumos">
-                    Tijerita corta uñas: $1100
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/empujador-cuticulas.png" alt="Descripción de la imagen"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Empujador de cuticulas</p>
-                  <p class="texto-insumos">
-                    Empujador de cuticulas: $800
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/punta-obelisco.png" alt="Descripción de la imagen"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">punta obelisco</p>
-                  <p class="texto-insumos">
-                    Punta obelisco: $800
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Decoracion -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '11'">
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/stickers.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">stickers</p>
-                  <p class="texto-insumos">
-                    Stickers variedad de diseños: $800
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/cristales.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">cristales plateados</p>
-                  <p class="texto-insumos">
-                    Cristales plateados: $1800
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/fimos.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Fimos</p>
-                  <p class="texto-insumos">
-                    Fimos variedad de formas: $2200
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/papel-foil.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Papel foil</p>
-                  <p class="texto-insumos">
-                    Papel foil: $600 c/u
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/forma-plana.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">forma planas</p>
-                  <p class="texto-insumos">
-                    Forma planas variedad de diseños: $500
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/papel-oro.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">papel oro</p>
-                  <p class="texto-insumos">
-                    Papel oro: $750
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/papel-plata.png" alt="Descripción de la imagen" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">papel plata</p>
-                  <p class="texto-insumos">
-                    Papel plata: $750
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pinceleria -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '12'">
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/cepillo.png" alt="cepillo-para-uñas" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">cepillo para uñas</p>
-                  <p class="texto-insumos">
-                    Cepillo para uñas: $600
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/brochas-chica.png" alt="brochas-chica" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">brochas </p>
-                  <p class="texto-insumos">
-                    Brochas chicas: $1900
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/pincel-linner-cherimoya.png" alt="pincel-linner-cherimoya"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">pincel linner</p>
-                  <p class="texto-insumos">
-                    Pincel linner(cherimoya): $1800
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/pincel-espatula-polygel.png" alt="pincel-espatula-polygel"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">pincel con espatula</p>
-                  <p class="texto-insumos">
-                    Pincel con espatula para polygel: $2500
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Cabinas -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '13'">
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/cabina-flor.png" alt="cabina-flor" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">cabina flor</p>
-                  <p class="texto-insumos">
-                    Cabina flor: $21.000.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/cabina-uv-led.png" alt="cabina-uv/led" class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">Cabina uv/led 48w</p>
-                  <p class="texto-insumos">
-                    Cabina uv/led 48w: $18.000
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- apoyamanos -->
-        <div class="row d-flex justify-content-center" *ngIf="selectedTab === '14'">
-          <div class="cartas col-lg-4 col-md-4 mb-3">
-            <div class="carta-container">
-              <div class="carta">
-                <div class="front-content">
-                  <img src="../../../assets/productos/apoya-manos-madera.png" alt="apoya-manos-madera"
-                    class="img-fluid">
-                </div>
-                <div class="content">
-                  <p class="heading">apoya manos de madera</p>
-                  <p class="texto-insumos">
-                    Apoya manos de madera, variedad de colores: $5800
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
-</div>
 
+  <div style="height: 100px"></div>
 
-<div style="height: 100px"></div>
-
-<app-footer></app-footer>
+  <app-footer></app-footer>
 </div>
